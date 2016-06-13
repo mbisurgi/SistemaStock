@@ -1,17 +1,24 @@
 package controller;
 
+import dao.ArticuloDao;
 import model.Articulo;
+import model.Comprobante;
+import model.ComprobanteCredito;
+import model.ComprobanteFactura;
 
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
 public class SistemaStock {
-    private SistemaStock instancia = null;
+    private static SistemaStock instancia = null;
 
     private List<Articulo> articulos;
+    private List<Comprobante> comprobantes;
 
     private SistemaStock() {
-        articulos = new ArrayList<>();
+        articulos = ArticuloDao.getInstancia().getArticulos();
+        comprobantes = new ArrayList<>();
 
         init();
     }
@@ -20,11 +27,15 @@ public class SistemaStock {
 
     }
 
-    public SistemaStock getInstancia() {
+    public static SistemaStock getInstancia() {
         if (instancia == null) {
             instancia = new SistemaStock();
         }
 
         return instancia;
+    }
+
+    public void insertFactura(Date fecha, String nroComprobante) {
+
     }
 }

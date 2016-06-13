@@ -3,16 +3,29 @@ package model;
 import java.util.Date;
 
 public class ItemStock {
+    private int idItem;
     private Date fecha;
     private int cantidad;
     private double precio;
     private int cantidadDisponible;
+
+    public ItemStock() {
+
+    }
 
     public ItemStock(Date fecha, int cantidad, double precio) {
         this.fecha = fecha;
         this.cantidad = cantidad;
         this.precio = precio;
         this.cantidadDisponible = cantidad;
+    }
+
+    public int getIdItem() {
+        return idItem;
+    }
+
+    public void setIdItem(int idItem) {
+        this.idItem = idItem;
     }
 
     public Date getFecha() {

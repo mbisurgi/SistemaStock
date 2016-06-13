@@ -5,21 +5,25 @@ import model.strategy.Valorizacion;
 import java.util.Date;
 
 public class Articulo {
-    private int nroArticulo;
+    private String nroArticulo;
     private String nombreArticulo;
     private Stock stock;
 
-    public Articulo(int nroArticulo, String nombreArticulo) {
+    public Articulo() {
+        this.stock = new Stock();
+    }
+
+    public Articulo(String nroArticulo, String nombreArticulo) {
         this.nroArticulo = nroArticulo;
         this.nombreArticulo = nombreArticulo;
         this.stock = new Stock();
     }
 
-    public int getNroArticulo() {
+    public String getNroArticulo() {
         return nroArticulo;
     }
 
-    public void setNroArticulo(int nroArticulo) {
+    public void setNroArticulo(String nroArticulo) {
         this.nroArticulo = nroArticulo;
     }
 

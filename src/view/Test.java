@@ -1,5 +1,6 @@
 package view;
 
+import controller.SistemaStock;
 import model.Articulo;
 import model.ItemStock;
 import model.strategy.*;
@@ -7,18 +8,20 @@ import model.strategy.*;
 import java.sql.Date;
 
 public class Test {
-    public Test() {
+    private SistemaStock sistema;
 
+    public Test() {
+        sistema = SistemaStock.getInstancia();
     }
 
     public static void main(String[] args) {
         Test test = new Test();
 
-        test.init();
+       // test.init();
     }
 
     private void init() {
-        Articulo art1 = new Articulo(1, "Levadura");
+        Articulo art1 = new Articulo("1", "Levadura");
 
         art1.addItem(Date.valueOf("2016-06-10"), 10, 150);
         art1.addItem(Date.valueOf("2016-06-10"), 15, 250);
@@ -45,5 +48,7 @@ public class Test {
         for (ItemStock item: art1.getStock().getItems()) {
             System.out.println(item);
         }
+
+
     }
 }
