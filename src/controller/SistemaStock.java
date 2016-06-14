@@ -3,8 +3,6 @@ package controller;
 import dao.ArticuloDao;
 import model.Articulo;
 import model.Comprobante;
-import model.ComprobanteCredito;
-import model.ComprobanteFactura;
 
 import java.sql.Date;
 import java.util.ArrayList;

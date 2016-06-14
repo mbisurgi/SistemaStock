@@ -30,4 +30,6 @@ public abstract class Comprobante {
 
         return total;
     }
+
+    public abstract void updateStock();
 }

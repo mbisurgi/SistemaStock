@@ -2,6 +2,7 @@ package view;
 
 import controller.SistemaStock;
 import model.Articulo;
+import model.Comprobante;
 import model.ItemStock;
 import model.strategy.*;
 
@@ -17,10 +18,10 @@ public class Test {
     public static void main(String[] args) {
         Test test = new Test();
 
-       // test.init();
+       // test.init1();
     }
 
-    private void init() {
+    private void init1() {
         Articulo art1 = new Articulo("1", "Levadura");
 
         art1.addItem(Date.valueOf("2016-06-10"), 10, 150);
@@ -48,6 +49,10 @@ public class Test {
         for (ItemStock item: art1.getStock().getItems()) {
             System.out.println(item);
         }
+    }
+
+    private void init2() {
+
 
 
     }
