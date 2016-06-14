@@ -3,9 +3,7 @@ package view;
 import controller.SistemaStock;
 import model.Articulo;
 import model.Comprobante;
-import model.ComprobanteVenta;
 import model.ItemStock;
-import model.bridge.TipoFactura;
 import model.strategy.*;
 
 import java.sql.Date;
@@ -54,7 +52,7 @@ public class Test {
     }
 
     private void init2() {
-        Comprobante facVenta = new ComprobanteVenta(new TipoFactura(), Date.valueOf("2016-06-10"), "A0001-00004512");
+
 
 
     }
