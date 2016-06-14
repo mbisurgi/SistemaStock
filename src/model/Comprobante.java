@@ -1,15 +1,21 @@
 package model;
 
+import model.Articulo;
+import model.ItemComprobante;
+import model.bridge.Tipo;
+
 import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Comprobante {
+    protected Tipo tipo;
     protected Date fecha;
     protected String nroComprobante;
     protected List<ItemComprobante> items;
 
-    public Comprobante(Date fecha, String nroComprobante) {
+    public Comprobante(Tipo tipo, Date fecha, String nroComprobante) {
+        this.tipo = tipo;
         this.fecha = fecha;
         this.nroComprobante = nroComprobante;
         this.items = new ArrayList<>();
