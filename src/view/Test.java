@@ -1,9 +1,7 @@
 package view;
 
 import controller.SistemaStock;
-import model.Articulo;
-import model.Comprobante;
-import model.ItemStock;
+import model.*;
 import model.strategy.*;
 
 import java.sql.Date;
@@ -52,8 +50,6 @@ public class Test {
     }
 
     private void init2() {
-
-
 
     }
 }

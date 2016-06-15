@@ -9,6 +9,8 @@ public class ComprobanteVtaFac extends ComprobanteVta {
 
     @Override
     public void updateStock() {
-
+        for (ItemComprobante item: items) {
+            item.getArticulo().restarStock(item.getCantidad());
+        }
     }
 }
