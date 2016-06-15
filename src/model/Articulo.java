@@ -8,9 +8,11 @@ public class Articulo {
     private String nroArticulo;
     private String nombreArticulo;
     private Stock stock;
+    private Margen margen;
 
     public Articulo() {
         this.stock = new Stock();
+        this.margen = new Margen();
     }
 
     public Articulo(String nroArticulo, String nombreArticulo) {
@@ -43,7 +45,15 @@ public class Articulo {
         this.stock = stock;
     }
 
-    public void addItem(Date fecha, int cantidad, double precio) {
+    public Margen getMargen() {
+        return margen;
+    }
+
+    public void setMargen(Margen margen) {
+        this.margen = margen;
+    }
+
+    public void addItemStock(Date fecha, int cantidad, double precio) {
         this.stock.addItem(fecha, cantidad, precio);
     }
 
@@ -55,5 +65,9 @@ public class Articulo {
         stock.setValorizacion(valorizacion);
 
         return stock.valorizar();
+    }
+
+    public void addItemMargen(ItemMargen item) {
+        this.margen.addItem(item);
     }
 }

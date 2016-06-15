@@ -36,7 +36,7 @@ public class SistemaStock {
         }
 
         Comprobante facVta = new ComprobanteVtaFac(Date.valueOf("2016-06-10"), "A0002-00014032", "Maximiliano Bisurgi");
-        facVta.addItem(art1, 125, 200);
+        facVta.addItem(art1, 95, 200);
         facVta.updateStock();
 
         for (ItemStock item: art1.getStock().getItems()) {
