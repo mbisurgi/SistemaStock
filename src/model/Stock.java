@@ -4,7 +4,7 @@ import com.sun.org.apache.bcel.internal.generic.IXOR;
 import model.strategy.Valorizacion;
 
 import java.util.ArrayList;
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 
 public class Stock {
@@ -37,23 +37,43 @@ public class Stock {
         items.add(item);
     }
 
-    public void restarStock(int cantidad) {
+    public List<ItemStock> restarStock(int cantidad) {
         int cantidadResta = cantidad;
+        List<ItemStock> itemsDescontados = new ArrayList<>();
+        ItemStock itemDescontado;
 
             for (ItemStock item: items) {
                 int cantidadDisponible = item.getCantidadDisponible();
 
                 if (cantidadDisponible >= cantidadResta) {
+                    itemDescontado = new ItemStock();
+                    itemDescontado.setFecha(item.getFecha());
+                    itemDescontado.setCantidad(item.getCantidad());
+                    itemDescontado.setPrecio(item.getPrecio());
+                    itemDescontado.setCantidadDisponible(cantidadResta);
+
+                    itemsDescontados.add(itemDescontado);
+
                     item.setCantidadDisponible(cantidadDisponible - cantidadResta);
                     cantidadResta =  0;
                     break;
                 }
 
                 if (cantidadDisponible < cantidadResta) {
+                    itemDescontado = new ItemStock();
+                    itemDescontado.setFecha(item.getFecha());
+                    itemDescontado.setCantidad(item.getCantidad());
+                    itemDescontado.setPrecio(item.getPrecio());
+                    itemDescontado.setCantidadDisponible(item.getCantidadDisponible());
+
+                    itemsDescontados.add(itemDescontado);
+
                     item.setCantidadDisponible(0);
                     cantidadResta = cantidadResta - cantidadDisponible;
                 }
             }
+
+        return itemsDescontados;
     }
 
     public int getCantidad() {

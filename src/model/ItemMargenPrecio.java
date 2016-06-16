@@ -17,4 +17,16 @@ public class ItemMargenPrecio extends ItemMargen {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
+    @Override
+    public double margen() {
+        return this.precio;
+    }
+
+    @Override
+    public String toString() {
+        return "ItemMargenPrecio{" +
+                "precio=" + precio +
+                '}';
+    }
 }

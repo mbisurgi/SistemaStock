@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Margen {
-    private List<ItemMargen> items;
+    protected List<ItemMargen> items;
 
     public Margen() {
         this.items = new ArrayList<>();
@@ -20,5 +20,15 @@ public class Margen {
 
     public void addItem(ItemMargen item) {
         items.add(item);
+    }
+
+    public double margen() {
+        double margen = 0;
+
+        for (ItemMargen item: items) {
+            margen = margen + item.margen();
+        }
+
+        return margen;
     }
 }

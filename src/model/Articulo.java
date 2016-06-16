@@ -2,7 +2,8 @@ package model;
 
 import model.strategy.Valorizacion;
 
-import java.util.Date;
+import java.sql.Date;
+import java.util.List;
 
 public class Articulo {
     private String nroArticulo;
@@ -19,6 +20,7 @@ public class Articulo {
         this.nroArticulo = nroArticulo;
         this.nombreArticulo = nombreArticulo;
         this.stock = new Stock();
+        this.margen = new Margen();
     }
 
     public String getNroArticulo() {
@@ -57,8 +59,8 @@ public class Articulo {
         this.stock.addItem(fecha, cantidad, precio);
     }
 
-    public void restarStock(int cantidad) {
-        this.stock.restarStock(cantidad);
+    public List<ItemStock> restarStock(int cantidad) {
+        return this.stock.restarStock(cantidad);
     }
 
     public double valorizar(Valorizacion valorizacion) {
@@ -69,5 +71,9 @@ public class Articulo {
 
     public void addItemMargen(ItemMargen item) {
         this.margen.addItem(item);
+    }
+
+    public double margen() {
+        return this.margen.margen();
     }
 }

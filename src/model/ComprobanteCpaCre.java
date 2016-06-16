@@ -9,6 +9,10 @@ public class ComprobanteCpaCre extends ComprobanteCpa {
 
     @Override
     public void updateStock() {
+        for (ItemComprobante item: items) {
+            ItemMargen itemMargen = new ItemMargenPrecio(this.fecha, (item.getCantidad() * item.getPrecio()));
 
+            item.getArticulo().addItemMargen(itemMargen);
+        }
     }
 }

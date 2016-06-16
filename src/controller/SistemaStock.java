@@ -31,17 +31,27 @@ public class SistemaStock {
         facCpa.addItem(art1, 150, 200);
         facCpa.updateStock();
 
-        for (ItemStock item: art1.getStock().getItems()) {
-            System.out.println(item);
+        for (ItemStock itemStock: art1.getStock().getItems()) {
+            System.out.println(itemStock);
         }
 
         Comprobante facVta = new ComprobanteVtaFac(Date.valueOf("2016-06-10"), "A0002-00014032", "Maximiliano Bisurgi");
-        facVta.addItem(art1, 95, 200);
+        facVta.addItem(art1, 130, 200);
         facVta.updateStock();
 
-        for (ItemStock item: art1.getStock().getItems()) {
-            System.out.println(item);
+        Comprobante creVta = new ComprobanteVtaCre(Date.valueOf("2016-06-10"), "A0003-00003421", "Maximiliano Bisurgi");
+        creVta.addItem(art1, 10, 50);
+        creVta.updateStock();
+
+        for (ItemStock itemStock: art1.getStock().getItems()) {
+            System.out.println(itemStock);
         }
+
+        for (ItemMargen itemMargen: art1.getMargen().getItems()) {
+            System.out.println(itemMargen);
+        }
+
+        System.out.println(art1.margen());
     }
 
     public static SistemaStock getInstancia() {
