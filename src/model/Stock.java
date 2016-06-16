@@ -1,6 +1,5 @@
 package model;
 
-import com.sun.org.apache.bcel.internal.generic.IXOR;
 import model.strategy.Valorizacion;
 
 import java.util.ArrayList;

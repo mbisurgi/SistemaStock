@@ -37,6 +37,32 @@ public class ArticuloDao extends AbstractDao {
 
     }
 
+    public Articulo getArticulo(String nroArticulo) {
+        Articulo art = new Articulo();
+
+        Connection con = PoolConnection.getInstancia().getConnection();
+
+        try {
+            String sql = "Select * From articulos Where nroArticulo = ?";
+
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1, nroArticulo);
+
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                art.setNroArticulo(rs.getString("nroArticulo"));
+                art.setNombreArticulo(rs.getString("nombreArticulo"));
+            }
+        } catch (SQLException ex) {
+
+        } finally {
+            PoolConnection.getInstancia().releaseConnection(con);
+        }
+
+        return art;
+    }
+
     public List<Articulo> getArticulos() {
         List<Articulo> listado = new ArrayList<>();
 

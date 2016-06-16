@@ -3,6 +3,10 @@ package model;
 import java.sql.Date;
 
 public class ComprobanteCpaFac extends ComprobanteCpa {
+    public ComprobanteCpaFac() {
+
+    }
+
     public ComprobanteCpaFac(Date fecha, String nroComprobante, String proveedor) {
         super(fecha, nroComprobante, proveedor);
     }

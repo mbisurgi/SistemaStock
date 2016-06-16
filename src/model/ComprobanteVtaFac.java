@@ -4,6 +4,10 @@ import java.sql.Date;
 import java.util.List;
 
 public class ComprobanteVtaFac extends ComprobanteVta {
+    public ComprobanteVtaFac() {
+
+    }
+
     public ComprobanteVtaFac(Date fecha, String nroComprobante, String cliente) {
         super(fecha, nroComprobante, cliente);
     }
