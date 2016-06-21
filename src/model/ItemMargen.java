@@ -2,8 +2,8 @@ package model;
 
 import java.sql.Date;
 
-public class ItemMargen {
-    private Date fecha;
+public abstract class ItemMargen {
+    protected Date fecha;
 
     public ItemMargen(Date fecha) {
         this.fecha = fecha;
@@ -15,5 +15,14 @@ public class ItemMargen {
 
     public void setFecha(Date fecha) {
         this.fecha = fecha;
+    }
+
+    public abstract double margen();
+
+    @Override
+    public String toString() {
+        return "ItemMargen{" +
+                "fecha=" + fecha +
+                '}';
     }
 }

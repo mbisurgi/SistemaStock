@@ -9,10 +9,38 @@ public abstract class Comprobante {
     protected String nroComprobante;
     protected List<ItemComprobante> items;
 
+    public Comprobante() {
+
+    }
+
     public Comprobante(Date fecha, String nroComprobante) {
         this.fecha = fecha;
         this.nroComprobante = nroComprobante;
         this.items = new ArrayList<>();
+    }
+
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getNroComprobante() {
+        return nroComprobante;
+    }
+
+    public void setNroComprobante(String nroComprobante) {
+        this.nroComprobante = nroComprobante;
+    }
+
+    public List<ItemComprobante> getItems() {
+        return items;
+    }
+
+    public void setItems(List<ItemComprobante> items) {
+        this.items = items;
     }
 
     public void addItem(Articulo articulo, int cantidad, double precio) {

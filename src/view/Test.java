@@ -22,9 +22,9 @@ public class Test {
     private void init1() {
         Articulo art1 = new Articulo("1", "Levadura");
 
-        art1.addItem(Date.valueOf("2016-06-10"), 10, 150);
-        art1.addItem(Date.valueOf("2016-06-10"), 15, 250);
-        art1.addItem(Date.valueOf("2016-06-10"), 25, 270);
+        art1.addItemStock(Date.valueOf("2016-06-10"), 10, 150);
+        art1.addItemStock(Date.valueOf("2016-06-10"), 15, 250);
+        art1.addItemStock(Date.valueOf("2016-06-10"), 25, 270);
 
         System.out.println("Unidades       : " + art1.getStock().getCantidad());
         System.out.println("Valorizado PEPS: " + art1.valorizar(new ValorizacionPEPS()));

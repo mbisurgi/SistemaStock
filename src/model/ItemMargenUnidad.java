@@ -37,4 +37,21 @@ public class ItemMargenUnidad extends ItemMargen {
     public void setPrecioVta(double precioVta) {
         this.precioVta = precioVta;
     }
+
+    @Override
+    public double margen() {
+        double totalCpa = cantidad * precioCpa;
+        double totalVta = cantidad * precioVta;
+
+        return  totalVta - totalCpa;
+    }
+
+    @Override
+    public String toString() {
+        return "ItemMargenUnidad{" +
+                "cantidad=" + cantidad +
+                ", precioCpa=" + precioCpa +
+                ", precioVta=" + precioVta +
+                '}';
+    }
 }
