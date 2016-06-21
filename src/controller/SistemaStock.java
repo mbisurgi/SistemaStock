@@ -3,6 +3,7 @@ package controller;
 import dao.ArticuloDao;
 import dao.ComprobanteDao;
 import model.*;
+import model.strategy.Valorizacion;
 import model.strategy.ValorizacionUEPS;
 
 import java.sql.Date;
@@ -121,5 +122,28 @@ public class SistemaStock {
 
     public void insertFactura(Date fecha, String nroComprobante) {
 
+    }
+
+    public double valorizar(String nroArticulo, Valorizacion valorizacion) {
+        double valorizado = 0;
+
+        Articulo art = buscarArticulo(nroArticulo);
+
+        if (art != null) {
+            art.getStock().setValorizacion(valorizacion);
+            valorizado = art.getStock().valorizar();
+        }
+
+        return valorizado;
+    }
+
+    public Articulo buscarArticulo(String nroArticulo) {
+        for (Articulo art: articulos) {
+            if (art.getNroArticulo().equals(nroArticulo)) {
+                return art;
+            }
+        }
+
+        return null;
     }
 }

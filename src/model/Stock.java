@@ -1,6 +1,8 @@
 package model;
 
 import model.strategy.Valorizacion;
+import model.strategy.ValorizacionPEPS;
+import model.strategy.ValorizacionUEPS;
 
 import java.util.ArrayList;
 import java.sql.Date;
@@ -12,6 +14,7 @@ public class Stock {
 
     public Stock() {
         this.items = new ArrayList<>();
+        this.valorizacion = new ValorizacionUEPS();
     }
 
     public List<ItemStock> getItems() {
