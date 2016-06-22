@@ -1,7 +1,6 @@
 package dao;
 
-import model.Articulo;
-import model.ItemStock;
+import model.*;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -78,7 +77,7 @@ public class ArticuloDao extends AbstractDao {
 
                 art.setNroArticulo(rs.getString("nroArticulo"));
                 art.setNombreArticulo(rs.getString("nombreArticulo"));
-                art.getStock().setItems(getItems(rs.getString("nroArticulo")));
+                art.getStock().setItems(getItemsStock(rs.getString("nroArticulo")));
 
                 listado.add(art);
             }
@@ -91,7 +90,7 @@ public class ArticuloDao extends AbstractDao {
         return listado;
     }
 
-    private List<ItemStock> getItems(String nroArticulo) {
+    private List<ItemStock> getItemsStock(String nroArticulo) {
         List<ItemStock> listado = new ArrayList<>();
 
         Connection con = PoolConnection.getInstancia().getConnection();
@@ -114,6 +113,51 @@ public class ArticuloDao extends AbstractDao {
                 item.setCantidadDisponible(rs.getInt("cantidadDisponible"));
 
                 listado.add(item);
+            }
+        } catch (SQLException ex) {
+
+        } finally {
+            PoolConnection.getInstancia().releaseConnection(con);
+        }
+
+        return listado;
+    }
+
+    private List<ItemMargen> getItemsMargen(String nroArticulo) {
+        List<ItemMargen> listado = new ArrayList<>();
+
+        Connection con = PoolConnection.getInstancia().getConnection();
+
+        try {
+            String sql = "Select * From itemsmargen Where nroArticulo = ?";
+
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1, nroArticulo);
+
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+                if (rs.getInt("cantidad") != 0) {
+                    ItemMargenUnidad item = new ItemMargenUnidad();
+
+                    item.setIdItem(rs.getInt("idItem"));
+                    item.setFecha(rs.getDate("fecha"));
+                    item.setCantidad(rs.getInt("cantidad"));
+                    item.setPrecioCpa(rs.getDouble("precioCpa"));
+                    item.setPrecioVta(rs.getDouble("precioVta"));
+
+                    listado.add(item);
+                }
+
+                if (rs.getInt("cantidad") == 0) {
+                    ItemMargenPrecio item = new ItemMargenPrecio();
+
+                    item.setIdItem(rs.getInt("idItem"));
+                    item.setFecha(rs.getDate("fecha"));
+                    item.setPrecio(rs.getDouble("precio"));
+
+                    listado.add(item);
+                }
             }
         } catch (SQLException ex) {
 

@@ -5,6 +5,10 @@ import java.sql.Date;
 public class ItemMargenPrecio extends ItemMargen {
     private double precio;
 
+    public ItemMargenPrecio() {
+
+    }
+
     public ItemMargenPrecio(Date fecha, double precio) {
         super(fecha);
         this.precio = precio;

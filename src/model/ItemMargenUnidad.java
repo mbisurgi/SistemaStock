@@ -7,6 +7,10 @@ public class ItemMargenUnidad extends ItemMargen {
     private double precioCpa;
     private double precioVta;
 
+    public ItemMargenUnidad() {
+
+    }
+
     public ItemMargenUnidad(Date fecha, int cantidad, double precioCpa, double precioVta) {
         super(fecha);
         this.cantidad = cantidad;
