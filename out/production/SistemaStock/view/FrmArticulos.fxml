@@ -94,20 +94,62 @@
                                           <Font size="12.0" />
                                        </font>
                                     </Label>
-                                    <ComboBox fx:id="cboValorizacion" layoutX="160.0" layoutY="40.0" onAction="#cboValorizacionOnItemChanged" prefWidth="150.0" promptText="Valorizacion" />
+                                    <ComboBox fx:id="cboValorizacion" disable="true" layoutX="160.0" layoutY="40.0" onAction="#cboValorizacionOnItemChanged" prefWidth="150.0" promptText="Valorizacion" />
                                  </children>
                               </AnchorPane>
                            </content>
                         </TitledPane>
                         <TitledPane animated="false" layoutX="14.0" layoutY="314.0" prefHeight="135.0" prefWidth="570.0" text="Margen">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="15.0" text="Margen:">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER" layoutX="76.0" layoutY="16.0" text="\$">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblMargen" alignment="CENTER_RIGHT" layoutX="89.0" layoutY="16.0" text="margen">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Label>
+                                 </children></AnchorPane>
                            </content>
                         </TitledPane>
                      </children>
                   </AnchorPane>
             </content>
           </Tab>
+            <Tab closable="false" text="STOCK">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="455.0" prefWidth="600.0">
+                     <children>
+                        <TitledPane animated="false" layoutX="14.0" layoutY="42.0" prefHeight="410.0" prefWidth="570.0" text="Movimientos">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TableView fx:id="tblMovimientosStock" layoutX="14.0" layoutY="14.0" prefHeight="382.0" prefWidth="568.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columns>
+                                          <TableColumn fx:id="colId" editable="false" prefWidth="100.0" resizable="false" text="Id" />
+                                        <TableColumn fx:id="colFecha" editable="false" prefWidth="111.0" resizable="false" text="Fecha" />
+                                        <TableColumn fx:id="colCantidad" editable="false" prefWidth="112.0" resizable="false" text="Cantidad" />
+                                          <TableColumn fx:id="colPrecio" editable="false" prefWidth="111.0" resizable="false" text="Precio" />
+                                          <TableColumn fx:id="colDisponible" editable="false" prefWidth="112.0" resizable="false" text="Disponible" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
         </tabs>
       </TabPane>
    </children>
