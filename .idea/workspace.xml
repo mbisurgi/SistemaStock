@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/SistemaStock.java" afterPath="$PROJECT_DIR$/src/controller/SistemaStock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/strategy/ValorizacionPEPS.java" afterPath="$PROJECT_DIR$/src/model/strategy/ValorizacionPEPS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/strategy/ValorizacionPPP.java" afterPath="$PROJECT_DIR$/src/model/strategy/ValorizacionPPP.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/strategy/ValorizacionUCPA.java" afterPath="$PROJECT_DIR$/src/model/strategy/ValorizacionUCPA.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/strategy/ValorizacionUEPS.java" afterPath="$PROJECT_DIR$/src/model/strategy/ValorizacionUEPS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/ControllerFrmArticulos.java" afterPath="$PROJECT_DIR$/src/view/ControllerFrmArticulos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/FrmArticulos.fxml" afterPath="$PROJECT_DIR$/src/view/FrmArticulos.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -952,7 +945,7 @@
       <workItem from="1466018055684" duration="2986000" />
       <workItem from="1466081094805" duration="19015000" />
       <workItem from="1466521100057" duration="9169000" />
-      <workItem from="1466537225887" duration="2619000" />
+      <workItem from="1466537225887" duration="2634000" />
     </task>
     <task id="LOCAL-00001" summary="Controlador">
       <created>1465831772322</created>
@@ -1017,11 +1010,18 @@
       <option name="project" value="LOCAL" />
       <updated>1466533729826</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Vistas">
+      <created>1466602312854</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1466602312854</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79381000" />
+    <option name="totallyTimeSpent" value="79396000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1044,7 +1044,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283767" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39281288" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39281288" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />

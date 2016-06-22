@@ -11,7 +11,6 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ControllerFrmArticulos">
    <children>
       <TabPane prefHeight="500.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
@@ -95,7 +94,7 @@
                                           <Font size="12.0" />
                                        </font>
                                     </Label>
-                                    <ComboBox fx:id="cboValorizacion" disable="true" layoutX="160.0" layoutY="40.0" prefWidth="150.0" promptText="Valorizacion" />
+                                    <ComboBox fx:id="cboValorizacion" layoutX="160.0" layoutY="40.0" onAction="#cboValorizacionOnItemChanged" prefWidth="150.0" promptText="Valorizacion" />
                                  </children>
                               </AnchorPane>
                            </content>
