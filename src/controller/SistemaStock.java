@@ -21,12 +21,6 @@ public class SistemaStock {
         comprobantes = ComprobanteDao.getInstancia().getComprobantes();
 
         //init();
-
-        for (Comprobante com: comprobantes) {
-            for (ItemComprobante item: com.getItems()) {
-
-            }
-        }
     }
 
     private void init() {

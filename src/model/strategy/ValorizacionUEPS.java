@@ -18,4 +18,9 @@ public class ValorizacionUEPS extends Valorizacion {
 
         return valor;
     }
+
+    @Override
+    public String toString() {
+        return "UEPS";
+    }
 }

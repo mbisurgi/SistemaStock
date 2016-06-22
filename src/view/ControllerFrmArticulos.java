@@ -7,6 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import model.Articulo;
+import model.strategy.*;
 
 public class ControllerFrmArticulos {
     private SistemaStock sistema = null;
@@ -24,7 +25,7 @@ public class ControllerFrmArticulos {
     @FXML
     Label lblValorizado;
     @FXML
-    ComboBox<String> cboValorizacion;
+    ComboBox<Valorizacion> cboValorizacion;
 
     public void initialize() {
         sistema = SistemaStock.getInstancia();
@@ -33,7 +34,7 @@ public class ControllerFrmArticulos {
     }
 
     private void cargarComboBox() {
-        cboValorizacion.getItems().addAll("PEPS", "UEPS", "UCPA", "PPP");
+        cboValorizacion.getItems().addAll(new ValorizacionPEPS(), new ValorizacionUEPS(), new ValorizacionUCPA(), new ValorizacionPPP());
     }
 
     public void lblBuscarOnMouseClicked() {
@@ -65,5 +66,14 @@ public class ControllerFrmArticulos {
 
     public void lblBuscarOnMouseExited() {
         lblBuscar.setUnderline(false);
+    }
+
+    public void cboValorizacionOnItemChanged() {
+        Articulo art = sistema.buscarArticulo(txtNroArticulo.getText());
+
+        if (art != null) {
+            art.getStock().setValorizacion(cboValorizacion.getSelectionModel().getSelectedItem());
+            lblValorizado.setText(String.valueOf(art.getStock().valorizar()));
+        }
     }
 }

@@ -11,4 +11,9 @@ public class ValorizacionUCPA extends Valorizacion {
 
         return ultimaCompra.getPrecio() * cantidad;
     }
+
+    @Override
+    public String toString() {
+        return "UCPA";
+    }
 }

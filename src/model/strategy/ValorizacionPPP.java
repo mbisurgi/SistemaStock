@@ -15,4 +15,9 @@ public class ValorizacionPPP extends Valorizacion {
 
         return (valor / cantidad) * cantidad;
     }
+
+    @Override
+    public String toString() {
+        return "PPP";
+    }
 }

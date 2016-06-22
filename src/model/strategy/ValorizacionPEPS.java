@@ -15,4 +15,9 @@ public class ValorizacionPEPS extends Valorizacion {
 
         return valor;
     }
+
+    @Override
+    public String toString() {
+        return "PEPS";
+    }
 }
