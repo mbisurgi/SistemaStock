@@ -17,8 +17,8 @@ public class SistemaStock {
     private List<Comprobante> comprobantes;
 
     private SistemaStock() {
-        articulos = ArticuloDao.getInstancia().getArticulos();
-        comprobantes = ComprobanteDao.getInstancia().getComprobantes();
+        //articulos = ArticuloDao.getInstancia().getArticulos();
+        //comprobantes = ComprobanteDao.getInstancia().getComprobantes();
 
         //init();
     }
@@ -112,6 +112,14 @@ public class SistemaStock {
         }
 
         return instancia;
+    }
+
+    public void sincronizarArticulos() {
+        ArticuloDao.getInstancia().sincronizarArticulos();
+    }
+
+    public void sincronizarComprobantes() {
+        ComprobanteDao.getInstancia().sincronizarComprobantes();
     }
 
     public void insertFactura(Date fecha, String nroComprobante) {

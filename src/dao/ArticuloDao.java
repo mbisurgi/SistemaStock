@@ -4,6 +4,7 @@ import model.*;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 public class ArticuloDao extends AbstractDao {
@@ -166,5 +167,54 @@ public class ArticuloDao extends AbstractDao {
         }
 
         return listado;
+    }
+
+    public void sincronizarArticulos() {
+        HashMap<String, String> articulos = new HashMap<>();
+        List<Articulo> articulosSincronizar = new ArrayList<>();
+
+        Connection con = PoolConnection.getInstancia().getConnection();
+        Connection conTango = PoolConnectionTango.getInstancia().getConnection();
+
+        try {
+            Statement st = con.createStatement();
+
+            ResultSet rs = st.executeQuery("Select * From articulos");
+
+            while (rs.next()) {
+                articulos.put(rs.getString("nroArticulo"), rs.getString("nombreArticulo"));
+            }
+
+            Statement stTango = conTango.createStatement();
+
+            ResultSet rsTango = stTango.executeQuery("Select COD_ARTICU, DESCRIPCIO From STA11");
+
+            while (rsTango.next()) {
+                if (!articulos.containsKey(rs.getString("COD_ARTICU"))) {
+                    Articulo art = new Articulo();
+
+                    art.setNroArticulo(rs.getString("COD_ARTICU"));
+                    art.setNombreArticulo(rs.getString("DESCRIPCIO"));
+
+                    articulosSincronizar.add(art);
+                }
+            }
+
+            String sql = "Insert Into articulos (nroArticulo, nombreArticulo) Values (?, ?)";
+
+            PreparedStatement ps = con.prepareStatement(sql);
+
+            for (Articulo art: articulosSincronizar) {
+                ps.setString(1, art.getNroArticulo());
+                ps.setString(2, art.getNombreArticulo());
+
+                ps.executeUpdate();
+            }
+        } catch (SQLException ex) {
+
+        } finally {
+            PoolConnection.getInstancia().releaseConnection(con);
+            PoolConnectionTango.getInstancia().releaseConnection(conTango);
+        }
     }
 }

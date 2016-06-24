@@ -11,9 +11,9 @@ import javafx.stage.Stage;
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("FrmArticulos.fxml"));
-        primaryStage.setTitle("Articulos");
-        primaryStage.setScene(new Scene(root, 600, 500));
+        Parent root = FXMLLoader.load(getClass().getResource("FrmPrincipal.fxml"));
+        primaryStage.setTitle("Sistema de Stock");
+        primaryStage.setScene(new Scene(root, 800, 500));
         primaryStage.setResizable(false);
         primaryStage.show();
     }

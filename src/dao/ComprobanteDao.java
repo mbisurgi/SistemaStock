@@ -146,4 +146,8 @@ public class ComprobanteDao extends AbstractDao{
 
         return listado;
     }
+
+    public void sincronizarComprobantes() {
+
+    }
 }
