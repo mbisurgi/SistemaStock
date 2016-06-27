@@ -27,7 +27,7 @@ public class PoolConnectionTango {
 
     private Connection connect() {
         try {
-            Connection con = DriverManager.getConnection("jdbc:sqlserver://181.46.86.2:3306;database=;user=;password=;");
+            Connection con = DriverManager.getConnection("jdbc:sqlserver://192.163.220.119;database=Galias_SRL;user=sa_ale74;password=Epec9854;");
 
             return con;
         } catch (SQLException exSql) {

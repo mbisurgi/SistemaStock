@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/dao/ArticuloDao.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/dao/ArticuloDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/model/ItemMargen.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/model/ItemMargen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/model/ItemMargenPrecio.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/model/ItemMargenPrecio.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/model/ItemMargenUnidad.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/model/ItemMargenUnidad.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/view/FrmArticulos.fxml" afterPath="$PROJECT_DIR$/out/production/SistemaStock/view/FrmArticulos.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/SistemaStock.java" afterPath="$PROJECT_DIR$/src/controller/SistemaStock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/ComprobanteDao.java" afterPath="$PROJECT_DIR$/src/dao/ComprobanteDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/PoolConnectionTango.java" afterPath="$PROJECT_DIR$/src/dao/PoolConnectionTango.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -71,8 +69,8 @@
       <file leaf-file-name="SistemaStock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/SistemaStock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="117" column="8" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
+            <state relative-caret-position="615">
+              <caret line="157" column="9" selection-start-line="157" selection-start-column="9" selection-end-line="157" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#init#0;class#SistemaStock#0" expanded="false" />
@@ -81,39 +79,65 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/Main.java">
+      <file leaf-file-name="ComprobanteVtaFac.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/ComprobanteVtaFac.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+            <state relative-caret-position="345">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PoolConnection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/PoolConnection.java">
+      <file leaf-file-name="ComprobanteCpaFac.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/ComprobanteCpaFac.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="59" column="5" selection-start-line="9" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PoolConnectionTango.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dao/PoolConnectionTango.java">
+      <file leaf-file-name="ComprobanteDao.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dao/ComprobanteDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="48">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="32" selection-end-column="36" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#getComprobantes#0;class#ComprobanteDao#0" expanded="false" />
+                <element signature="method#getComprobantesPendientes#0;class#ComprobanteDao#0" expanded="false" />
+                <marker date="1467030350000" expanded="true" signature="828:890" ph="Update compr... " />
+                <marker date="1467030350000" expanded="true" signature="1922:1948" ph="Select * Fro... comprobantes" />
+                <marker date="1467030350000" expanded="true" signature="4852:4898" ph="Select * Fro... comprobantes" />
+                <marker date="1467030350000" expanded="true" signature="7985:8066" ph="Select * Fro... itemscomprobante" />
+                <marker date="1467030350000" expanded="true" signature="9318:9344" ph="Select * Fro... comprobantes" />
+                <marker date="1467030350000" expanded="true" signature="9712:9731" ph="Select * Fro... CPA04" />
+                <marker date="1467030350000" expanded="true" signature="10850:10869" ph="Select * Fro... GVA12" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FrmPrincipal.fxml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ArticuloDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dao/ArticuloDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29">
+              <caret line="176" column="81" selection-start-line="175" selection-start-column="8" selection-end-line="176" selection-end-column="81" />
+              <folding>
+                <marker date="1466716124000" expanded="true" signature="812:857" ph="Select * Fro... articulos" />
+                <marker date="1466716124000" expanded="true" signature="1631:1654" ph="Select * Fro... articulos" />
+                <marker date="1466716124000" expanded="true" signature="2405:2478" ph="Select * Fro... itemsstock" />
+                <marker date="1466716124000" expanded="true" signature="3461:3508" ph="Select * Fro... itemsmargen" />
+                <marker date="1466716124000" expanded="true" signature="5141:5164" ph="Select * Fro... articulos" />
+                <marker date="1466716124000" expanded="true" signature="5423:5463" ph="Select COD_A... STA11" />
+                <marker date="1466716124000" expanded="true" signature="5881:5946" ph="Insert Into articulos... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrmPrincipal.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/FrmPrincipal.fxml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -129,33 +153,8 @@
       <file leaf-file-name="ControllerFrmPrincipal.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/ControllerFrmPrincipal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="194">
               <caret line="34" column="66" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FrmArticulos.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/FrmArticulos.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerFrmArticulos.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/ControllerFrmArticulos.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-586">
-              <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -234,13 +233,13 @@
         <option value="$PROJECT_DIR$/src/model/ItemMargenUnidad.java" />
         <option value="$PROJECT_DIR$/src/model/ItemMargenPrecio.java" />
         <option value="$PROJECT_DIR$/src/model/ItemMargen.java" />
-        <option value="$PROJECT_DIR$/src/dao/PoolConnectionTango.java" />
         <option value="$PROJECT_DIR$/src/dao/ArticuloDao.java" />
-        <option value="$PROJECT_DIR$/src/dao/ComprobanteDao.java" />
         <option value="$PROJECT_DIR$/src/view/FrmPrincipal.fxml" />
         <option value="$PROJECT_DIR$/src/view/Main.java" />
-        <option value="$PROJECT_DIR$/src/controller/SistemaStock.java" />
         <option value="$PROJECT_DIR$/src/view/ControllerFrmPrincipal.java" />
+        <option value="$PROJECT_DIR$/src/dao/PoolConnectionTango.java" />
+        <option value="$PROJECT_DIR$/src/controller/SistemaStock.java" />
+        <option value="$PROJECT_DIR$/src/dao/ComprobanteDao.java" />
       </list>
     </option>
   </component>
@@ -252,8 +251,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="270" />
-    <option name="y" value="160" />
+    <option name="x" value="276" />
+    <option name="y" value="137" />
     <option name="width" value="1612" />
     <option name="height" value="876" />
   </component>
@@ -306,9 +305,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -437,24 +436,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SistemaStock" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SistemaStock" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sqljdbc42.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -977,6 +958,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
@@ -997,6 +981,7 @@
       <workItem from="1466537225887" duration="2634000" />
       <workItem from="1466605825940" duration="10133000" />
       <workItem from="1466687512169" duration="7191000" />
+      <workItem from="1466772512571" duration="7346000" />
     </task>
     <task id="LOCAL-00001" summary="Controlador">
       <created>1465831772322</created>
@@ -1086,7 +1071,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96720000" />
+    <option name="totallyTimeSpent" value="104066000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1098,18 +1083,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="270" y="160" width="1612" height="876" extended-state="0" />
+    <frame x="276" y="137" width="1612" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283767" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39033458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1119,19 +1102,29 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39653036" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39653036" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39033458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1149,7 +1142,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="34" />
+      <option name="time" value="35" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1178,24 +1171,6 @@
         <state relative-caret-position="240">
           <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteVtaCre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteVtaFac.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1296,38 +1271,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteCpa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteCpaFac.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteCpaCre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
-    <entry file="file://$PROJECT_DIR$/src/model/Comprobante.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/ItemMargenUnidad.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1356,7 +1300,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1370,56 +1313,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/ArticuloDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="210" column="35" selection-start-line="210" selection-start-column="35" selection-end-line="210" selection-end-column="35" />
-          <folding>
-            <marker date="1466716124000" expanded="true" signature="812:857" ph="Select * Fro... articulos" />
-            <marker date="1466716124000" expanded="true" signature="1631:1654" ph="Select * Fro... articulos" />
-            <marker date="1466716124000" expanded="true" signature="2405:2478" ph="Select * Fro... itemsstock" />
-            <marker date="1466716124000" expanded="true" signature="3461:3508" ph="Select * Fro... itemsmargen" />
-            <marker date="1466716124000" expanded="true" signature="5141:5164" ph="Select * Fro... articulos" />
-            <marker date="1466716124000" expanded="true" signature="5423:5463" ph="Select COD_A... STA11" />
-            <marker date="1466716124000" expanded="true" signature="5881:5946" ph="Insert Into articulos... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/FrmPrincipal.xsl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/ComprobanteDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="133" column="52" selection-start-line="133" selection-start-column="52" selection-end-line="133" selection-end-column="52" />
-          <folding>
-            <marker date="1466719010000" expanded="true" signature="880:906" ph="Select * Fro... comprobantes" />
-            <marker date="1466719010000" expanded="true" signature="3849:3930" ph="Select * Fro... itemscomprobante" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/FrmPrincipal.xsl" />
     <entry file="file://$PROJECT_DIR$/src/view/ControllerFrmArticulos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-586">
+        <state relative-caret-position="705">
           <caret line="57" column="68" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1436,7 +1337,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/PoolConnection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
+        <state relative-caret-position="825">
           <caret line="59" column="5" selection-start-line="9" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
           <folding />
         </state>
@@ -1444,18 +1345,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/PoolConnectionTango.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="314">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteVtaCre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/SistemaStock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="117" column="8" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
+        <state relative-caret-position="615">
+          <caret line="157" column="9" selection-start-line="157" selection-start-column="9" selection-end-line="157" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#init#0;class#SistemaStock#0" expanded="false" />
@@ -1463,13 +1380,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/ControllerFrmPrincipal.java">
+    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteCpaCre.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="34" column="66" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1482,6 +1397,82 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/ControllerFrmPrincipal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="34" column="66" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteVtaFac.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Comprobante.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteCpa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteCpaFac.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/ArticuloDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="176" column="81" selection-start-line="175" selection-start-column="8" selection-end-line="176" selection-end-column="81" />
+          <folding>
+            <marker date="1466716124000" expanded="true" signature="812:857" ph="Select * Fro... articulos" />
+            <marker date="1466716124000" expanded="true" signature="1631:1654" ph="Select * Fro... articulos" />
+            <marker date="1466716124000" expanded="true" signature="2405:2478" ph="Select * Fro... itemsstock" />
+            <marker date="1466716124000" expanded="true" signature="3461:3508" ph="Select * Fro... itemsmargen" />
+            <marker date="1466716124000" expanded="true" signature="5141:5164" ph="Select * Fro... articulos" />
+            <marker date="1466716124000" expanded="true" signature="5423:5463" ph="Select COD_A... STA11" />
+            <marker date="1466716124000" expanded="true" signature="5881:5946" ph="Insert Into articulos... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/ComprobanteDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="32" selection-end-column="36" />
+          <folding>
+            <element signature="method#getComprobantes#0;class#ComprobanteDao#0" expanded="false" />
+            <element signature="method#getComprobantesPendientes#0;class#ComprobanteDao#0" expanded="false" />
+            <marker date="1467030350000" expanded="true" signature="828:890" ph="Update compr... " />
+            <marker date="1467030350000" expanded="true" signature="1922:1948" ph="Select * Fro... comprobantes" />
+            <marker date="1467030350000" expanded="true" signature="4852:4898" ph="Select * Fro... comprobantes" />
+            <marker date="1467030350000" expanded="true" signature="7985:8066" ph="Select * Fro... itemscomprobante" />
+            <marker date="1467030350000" expanded="true" signature="9318:9344" ph="Select * Fro... comprobantes" />
+            <marker date="1467030350000" expanded="true" signature="9712:9731" ph="Select * Fro... CPA04" />
+            <marker date="1467030350000" expanded="true" signature="10850:10869" ph="Select * Fro... GVA12" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

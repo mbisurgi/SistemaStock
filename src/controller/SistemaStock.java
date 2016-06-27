@@ -18,7 +18,7 @@ public class SistemaStock {
 
     private SistemaStock() {
         //articulos = ArticuloDao.getInstancia().getArticulos();
-        //comprobantes = ComprobanteDao.getInstancia().getComprobantes();
+        comprobantes = ComprobanteDao.getInstancia().getComprobantesPendientes();
 
         //init();
     }
@@ -122,8 +122,40 @@ public class SistemaStock {
         ComprobanteDao.getInstancia().sincronizarComprobantes();
     }
 
-    public void insertFactura(Date fecha, String nroComprobante) {
+    public void ingresarStock() {
+        List<Comprobante> pendientes = ComprobanteDao.getInstancia().getComprobantesPendientes();
 
+        for (Comprobante comp: pendientes) {
+            if (comp.getClass() == ComprobanteCpaFac.class) {
+                comp.updateStock();
+
+                ComprobanteDao.getInstancia().update(comp);
+            }
+        }
+    }
+
+    public void egresarStock() {
+        List<Comprobante> pendientes = ComprobanteDao.getInstancia().getComprobantesPendientes();
+
+        for (Comprobante comp: pendientes) {
+            if (comp.getClass() == ComprobanteVtaFac.class) {
+                comp.updateStock();
+
+                ComprobanteDao.getInstancia().update(comp);
+            }
+        }
+    }
+
+    public void generarMargenPrecio() {
+        List<Comprobante> pendientes = ComprobanteDao.getInstancia().getComprobantesPendientes();
+
+        for (Comprobante comp: pendientes) {
+            if (comp.getClass() == ComprobanteVtaCre.class || comp.getClass() == ComprobanteCpaCre.class) {
+                comp.updateStock();
+
+                ComprobanteDao.getInstancia().update(comp);
+            }
+        }
     }
 
     public double valorizar(String nroArticulo, Valorizacion valorizacion) {
