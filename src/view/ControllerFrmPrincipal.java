@@ -25,6 +25,8 @@ public class ControllerFrmPrincipal {
     public void btnSyncArticulosOnClick() {
         try {
             SistemaStock.getInstancia().sincronizarArticulos();
+
+            mostrarMensaje("Articulos");
         } catch (Exception ex) {
             mostrarError(ex);
         }
@@ -33,9 +35,19 @@ public class ControllerFrmPrincipal {
     public void btnSyncComprobantesOnClick() {
         try {
             SistemaStock.getInstancia().sincronizarComprobantes();
+
+            mostrarMensaje("Comprobantes");
         } catch (Exception ex) {
             mostrarError(ex);
         }
+    }
+
+    private void mostrarMensaje(String msg) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Sincronizacion Exitosa");
+        alert.setHeaderText(null);
+        alert.setContentText(msg + " sincronizados correctamente");
+        alert.showAndWait();
     }
 
     private void mostrarError(Exception ex) {

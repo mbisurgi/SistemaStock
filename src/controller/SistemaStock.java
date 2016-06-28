@@ -18,7 +18,7 @@ public class SistemaStock {
 
     private SistemaStock() {
         //articulos = ArticuloDao.getInstancia().getArticulos();
-        comprobantes = ComprobanteDao.getInstancia().getComprobantesPendientes();
+        //comprobantes = ComprobanteDao.getInstancia().getComprobantesPendientes();
 
         //init();
     }

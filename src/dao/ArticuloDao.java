@@ -190,11 +190,11 @@ public class ArticuloDao extends AbstractDao {
             ResultSet rsTango = stTango.executeQuery("Select COD_ARTICU, DESCRIPCIO From STA11");
 
             while (rsTango.next()) {
-                if (!articulos.containsKey(rs.getString("COD_ARTICU"))) {
+                if (!articulos.containsKey(rsTango.getString("COD_ARTICU"))) {
                     Articulo art = new Articulo();
 
-                    art.setNroArticulo(rs.getString("COD_ARTICU"));
-                    art.setNombreArticulo(rs.getString("DESCRIPCIO"));
+                    art.setNroArticulo(rsTango.getString("COD_ARTICU"));
+                    art.setNombreArticulo(rsTango.getString("DESCRIPCIO"));
 
                     articulosSincronizar.add(art);
                 }
