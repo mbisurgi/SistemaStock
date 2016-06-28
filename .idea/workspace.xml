@@ -976,7 +976,7 @@
       <workItem from="1466772512571" duration="7363000" />
       <workItem from="1467031591593" duration="8097000" />
       <workItem from="1467133347228" duration="74000" />
-      <workItem from="1467136836415" duration="2925000" />
+      <workItem from="1467136836415" duration="2952000" />
     </task>
     <task id="LOCAL-00001" summary="Controlador">
       <created>1465831772322</created>
@@ -1076,11 +1076,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467141402324</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Sincronizacion exitosa">
+      <created>1467141580414</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1467141580414</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115179000" />
+    <option name="totallyTimeSpent" value="115206000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1092,7 +1099,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1368" height="732" extended-state="6" />
+    <frame x="-4" y="-4" width="1368" height="732" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
