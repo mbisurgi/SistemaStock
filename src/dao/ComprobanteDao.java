@@ -349,7 +349,7 @@ public class ComprobanteDao extends AbstractDao{
     private List<ItemComprobante> getItemsTango(String tipo, String comp, String nroComprobante) {
         List<ItemComprobante> listado = new ArrayList<>();
 
-        Connection con = PoolConnection.getInstancia().getConnection();
+        Connection con = PoolConnectionTango.getInstancia().getConnection();
 
         try {
             String sql;
@@ -399,7 +399,7 @@ public class ComprobanteDao extends AbstractDao{
         } catch (SQLException ex) {
 
         } finally {
-            PoolConnection.getInstancia().releaseConnection(con);
+            PoolConnectionTango.getInstancia().releaseConnection(con);
         }
 
         return listado;
@@ -440,7 +440,7 @@ public class ComprobanteDao extends AbstractDao{
                 String key = "CPA" + rsTango.getString("T_COMP") + rsTango.getString("N_COMP");
 
                 if (!comprobantes.containsKey(key)) {
-                    if (rs.getString("T_COMP").equals("FAC")) {
+                    if (rsTango.getString("T_COMP").equals("FAC")) {
                         ComprobanteCpaFac comp = new ComprobanteCpaFac();
 
                         comp.setFecha(rsTango.getDate("FECHA_EMIS"));
@@ -451,7 +451,7 @@ public class ComprobanteDao extends AbstractDao{
                         comprobantesSincronizar.add(comp);
                     }
 
-                    if (rs.getString("T_COMP").equals("N/C")) {
+                    if (rsTango.getString("T_COMP").equals("N/C")) {
                         ComprobanteCpaCre comp = new ComprobanteCpaCre();
 
                         comp.setFecha(rsTango.getDate("FECHA_EMIS"));
@@ -474,7 +474,7 @@ public class ComprobanteDao extends AbstractDao{
                 String key = "VTA" + rsTango.getString("T_COMP") + rsTango.getString("N_COMP");
 
                 if (!comprobantes.containsKey(key)) {
-                    if (rs.getString("T_COMP").equals("FAC")) {
+                    if (rsTango.getString("T_COMP").equals("FAC")) {
                         ComprobanteVtaFac comp = new ComprobanteVtaFac();
 
                         comp.setFecha(rsTango.getDate("FECHA_EMIS"));
@@ -485,7 +485,7 @@ public class ComprobanteDao extends AbstractDao{
                         comprobantesSincronizar.add(comp);
                     }
 
-                    if (rs.getString("T_COMP").equals("NCR")) {
+                    if (rsTango.getString("T_COMP").equals("NCR")) {
                         ComprobanteVtaCre comp = new ComprobanteVtaCre();
 
                         comp.setFecha(rsTango.getDate("FECHA_EMIS"));
