@@ -8,8 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/SistemaStock.java" afterPath="$PROJECT_DIR$/src/controller/SistemaStock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/ComprobanteDao.java" afterPath="$PROJECT_DIR$/src/dao/ComprobanteDao.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -978,7 +976,7 @@
       <workItem from="1466772512571" duration="7363000" />
       <workItem from="1467031591593" duration="8097000" />
       <workItem from="1467133347228" duration="74000" />
-      <workItem from="1467136836415" duration="2733000" />
+      <workItem from="1467136836415" duration="2925000" />
     </task>
     <task id="LOCAL-00001" summary="Controlador">
       <created>1465831772322</created>
@@ -1071,11 +1069,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467133380544</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Sincronizacion exitosa">
+      <created>1467141402324</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1467141402324</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114987000" />
+    <option name="totallyTimeSpent" value="115179000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1142,7 +1147,8 @@
     <MESSAGE value="Comprobantes Dao" />
     <MESSAGE value="Vistas" />
     <MESSAGE value="Menu Principal&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Menu Principal&#10;" />
+    <MESSAGE value="Sincronizacion exitosa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sincronizacion exitosa" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
