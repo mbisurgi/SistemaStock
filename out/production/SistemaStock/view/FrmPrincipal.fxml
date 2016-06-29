@@ -6,7 +6,6 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ControllerFrmPrincipal">
    <left>
       <VBox prefHeight="371.0" prefWidth="127.0" BorderPane.alignment="CENTER">
@@ -29,6 +28,29 @@
                   <Insets bottom="10.0" top="10.0" />
                </VBox.margin>
             </Button>
+            <Label alignment="CENTER" layoutX="15.0" layoutY="20.0" prefHeight="17.0" prefWidth="153.0" text="Procesos">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="btnIngresoStock" layoutX="15.0" layoutY="58.0" mnemonicParsing="false" onAction="#btnIngresoStockOnClick" prefHeight="27.0" prefWidth="138.0" text="Ingreso Stock">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnEgresoStock" layoutX="15.0" layoutY="190.0" mnemonicParsing="false" onAction="#btnEgresoStockOnClick" prefHeight="27.0" prefWidth="138.0" text="Egreso Stock">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnMargenPrecio" layoutX="15.0" layoutY="237.0" mnemonicParsing="false" onAction="#btnMargenPrecioOnClick" prefHeight="27.0" prefWidth="138.0" text="Generar Margen $">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
          </children>
          <padding>
             <Insets left="5.0" right="5.0" />
@@ -43,6 +65,11 @@
               <MenuItem mnemonicParsing="false" text="Salir" />
             </items>
           </Menu>
+            <Menu mnemonicParsing="false" text="Articulos">
+              <items>
+                <MenuItem fx:id="menuConsultaArticulo" mnemonicParsing="false" onAction="#menuConsultaArticuloOnClick" text="Consulta Articulo" />
+              </items>
+            </Menu>
         </menus>
       </MenuBar>
    </top>

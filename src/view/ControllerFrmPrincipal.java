@@ -1,14 +1,18 @@
 package view;
 
 import controller.SistemaStock;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
+import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
@@ -23,6 +27,8 @@ public class ControllerFrmPrincipal {
     Button btnEgresoStock;
     @FXML
     Button btnMargenPrecio;
+    @FXML
+    MenuItem menuConsultaArticulo;
 
     public void initialize() {
 
@@ -58,6 +64,23 @@ public class ControllerFrmPrincipal {
 
     public void btnMargenPrecioOnClick() {
 
+    }
+
+    public void menuConsultaArticuloOnClick(ActionEvent event) {
+        loadFrmArticulos(event);
+    }
+
+    private void loadFrmArticulos(ActionEvent event) {
+        try {
+            Parent parent = FXMLLoader.load(getClass().getResource("FrmArticulos.fxml"));
+            Stage stage = new Stage();
+            stage.setTitle("Articulos");
+            stage.setScene(new Scene(parent, 600, 500));
+            stage.setResizable(false);
+            stage.show();
+        } catch (IOException ex) {
+            mostrarError(ex);
+        }
     }
 
     private void mostrarMensaje(String msg) {

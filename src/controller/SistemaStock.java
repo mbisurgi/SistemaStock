@@ -18,7 +18,7 @@ public class SistemaStock {
 
     private SistemaStock() {
         articulos = ArticuloDao.getInstancia().getArticulos();
-        comprobantes = ComprobanteDao.getInstancia().getComprobantesPendientes();
+        //comprobantes = ComprobanteDao.getInstancia().getComprobantesPendientes();
 
         //init();
     }
@@ -141,7 +141,7 @@ public class SistemaStock {
             if (comp.getClass() == ComprobanteVtaFac.class) {
                 comp.updateStock();
 
-                ComprobanteDao.getInstancia().update(comp);
+                //ComprobanteDao.getInstancia().update(comp);
             }
         }
     }
