@@ -90,10 +90,10 @@ public class ComprobanteDao extends AbstractDao{
         Connection con = PoolConnection.getInstancia().getConnection();
 
         try {
-            String sql = "Update comprobantes Set pendiente = ? Where nroComprobante = ?";
+            String sql = "Update comprobantes Set movimientoStock = ? Where nroComprobante = ?";
 
             PreparedStatement ps = con.prepareStatement(sql);
-            ps.setString(1, "NO");
+            ps.setInt(1, 1);
             ps.setString(2, comp.getNroComprobante());
 
             ps.executeUpdate();
@@ -238,10 +238,10 @@ public class ComprobanteDao extends AbstractDao{
         Connection con = PoolConnection.getInstancia().getConnection();
 
         try {
-            String sql = "Select * From comprobantes Where pendiente = ?";
+            String sql = "Select * From comprobantes Where movimientoStock = ?";
 
             PreparedStatement ps = con.prepareStatement(sql);
-            ps.setString(1, "SI");
+            ps.setInt(1, 0);
 
             ResultSet rs = ps.executeQuery();
 
@@ -379,10 +379,10 @@ public class ComprobanteDao extends AbstractDao{
             }
 
             if (tipo.equals("CPA")) {
-                sql = "Select COD_ARTICU, CANTIDAD, PRECIO_NET From CPA46 Where N_COMP = ?";
+                sql = "Select COD_ARTICU, CANTIDAD, PRECIO_NET From CPA46 Where NCOMP_IN_C = ?";
 
                 ps = con.prepareStatement(sql);
-                ps.setString(1, nroComprobante);
+                ps.setDouble(1, Double.parseDouble(nroComprobante));
 
                 rs = ps.executeQuery();
 
@@ -425,7 +425,7 @@ public class ComprobanteDao extends AbstractDao{
 
             String sql;
 
-            sql = "Select T_COMP, N_COMP, FECHA_EMIS, COD_PROVEE From CPA04 Where COD_PROVEE = ?";
+            sql = "Select NCOMP_IN_C, T_COMP, N_COMP, FECHA_EMIS, COD_PROVEE From CPA04 Where COD_PROVEE = ?";
 
             PreparedStatement psTango;
 
@@ -446,7 +446,7 @@ public class ComprobanteDao extends AbstractDao{
                         comp.setFecha(rsTango.getDate("FECHA_EMIS"));
                         comp.setNroComprobante(rsTango.getString("N_COMP"));
                         comp.setProveedor(rsTango.getString("COD_PROVEE"));
-                        comp.setItems(getItemsTango("CPA", "FAC", rsTango.getString("N_COMP")));
+                        comp.setItems(getItemsTango("CPA", "FAC", String.valueOf(rsTango.getDouble("NCOMP_IN_C"))));
 
                         comprobantesSincronizar.add(comp);
                     }
@@ -457,7 +457,7 @@ public class ComprobanteDao extends AbstractDao{
                         comp.setFecha(rsTango.getDate("FECHA_EMIS"));
                         comp.setNroComprobante(rsTango.getString("N_COMP"));
                         comp.setProveedor(rsTango.getString("COD_PROVEE"));
-                        comp.setItems(getItemsTango("VTA", "N/C", rsTango.getString("N_COMP")));
+                        comp.setItems(getItemsTango("CPA", "N/C", String.valueOf(rsTango.getDouble("NCOMP_IN_C"))));
 
                         comprobantesSincronizar.add(comp);
                     }

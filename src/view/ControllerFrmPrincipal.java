@@ -17,6 +17,12 @@ public class ControllerFrmPrincipal {
     Button btnSyncArticulos;
     @FXML
     Button btnSyncComprobantes;
+    @FXML
+    Button btnIngresoStock;
+    @FXML
+    Button btnEgresoStock;
+    @FXML
+    Button btnMargenPrecio;
 
     public void initialize() {
 
@@ -40,6 +46,18 @@ public class ControllerFrmPrincipal {
         } catch (Exception ex) {
             mostrarError(ex);
         }
+    }
+
+    public void btnIngresoStockOnClick() {
+        SistemaStock.getInstancia().ingresarStock();
+    }
+
+    public void btnEgresoStockOnClick() {
+        SistemaStock.getInstancia().egresarStock();
+    }
+
+    public void btnMargenPrecioOnClick() {
+
     }
 
     private void mostrarMensaje(String msg) {

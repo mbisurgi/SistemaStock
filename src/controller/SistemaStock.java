@@ -129,7 +129,7 @@ public class SistemaStock {
             if (comp.getClass() == ComprobanteCpaFac.class) {
                 comp.updateStock();
 
-                ComprobanteDao.getInstancia().update(comp);
+                //ComprobanteDao.getInstancia().update(comp);
             }
         }
     }
