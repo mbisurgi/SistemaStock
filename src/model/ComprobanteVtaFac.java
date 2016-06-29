@@ -24,6 +24,7 @@ public class ComprobanteVtaFac extends ComprobanteVta {
             for (ItemStock itemDescontado: itemsDescontados) {
                 ItemMargen margen = new ItemMargenUnidad(itemDescontado.getFecha(), itemDescontado.getCantidadDisponible(), itemDescontado.getPrecio(), item.getPrecio());
                 art.getMargen().addItem(margen);
+                //comentario
             }
         }
     }
