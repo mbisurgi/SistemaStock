@@ -118,7 +118,7 @@ public class SistemaStock {
         ArticuloDao.getInstancia().sincronizarArticulos();
     }
 
-    public void sincronizarComprobantes() {
+    public void sincronizarComprobantes(Date fecha) {
         ComprobanteDao.getInstancia().sincronizarComprobantes();
     }
 

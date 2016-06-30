@@ -15,8 +15,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
+import java.sql.Date;
 
 public class ControllerFrmPrincipal {
+    @FXML
+    DatePicker dtpFecha;
     @FXML
     Button btnSyncArticulos;
     @FXML
@@ -46,7 +49,7 @@ public class ControllerFrmPrincipal {
 
     public void btnSyncComprobantesOnClick() {
         try {
-            SistemaStock.getInstancia().sincronizarComprobantes();
+            SistemaStock.getInstancia().sincronizarComprobantes(Date.valueOf(dtpFecha.getValue()));
 
             mostrarMensaje("Sincronizacion Exitosa", "Comprobantes sincronizados correctamente");
         } catch (Exception ex) {

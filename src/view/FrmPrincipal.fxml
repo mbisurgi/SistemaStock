@@ -18,6 +18,11 @@
                   <Insets bottom="10.0" top="10.0" />
                </VBox.margin>
             </Label>
+            <DatePicker fx:id="dtpFecha">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </DatePicker>
             <Button fx:id="btnSyncArticulos" mnemonicParsing="false" onAction="#btnSyncArticulosOnClick" prefHeight="27.0" prefWidth="138.0" text="Articulos">
                <VBox.margin>
                   <Insets bottom="10.0" top="10.0" />

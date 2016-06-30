@@ -405,7 +405,7 @@ public class ComprobanteDao extends AbstractDao{
         return listado;
     }
 
-    public void sincronizarComprobantes() {
+    public void sincronizarComprobantes(Date fecha) {
         HashMap<String, String> comprobantes = new HashMap<>();
         List<Comprobante> comprobantesSincronizar = new ArrayList<>();
 
@@ -425,12 +425,13 @@ public class ComprobanteDao extends AbstractDao{
 
             String sql;
 
-            sql = "Select NCOMP_IN_C, T_COMP, N_COMP, FECHA_EMIS, COD_PROVEE From CPA04 Where COD_PROVEE = ?";
+            sql = "Select NCOMP_IN_C, T_COMP, N_COMP, FECHA_EMIS, COD_PROVEE From CPA04 Where COD_PROVEE = ? And FECHA_EMIS >= ?";
 
             PreparedStatement psTango;
 
             psTango = conTango.prepareStatement(sql);
             psTango.setString(1, "100001");
+            psTango.setDate(2, fecha);
 
             ResultSet rsTango;
 
@@ -464,9 +465,10 @@ public class ComprobanteDao extends AbstractDao{
                 }
             }
 
-            sql = "Select T_COMP, N_COMP, FECHA_EMIS, COD_CLIENT From GVA12";
+            sql = "Select T_COMP, N_COMP, FECHA_EMIS, COD_CLIENT From GVA12 Where FECHA_EMIS = ?";
 
             psTango = conTango.prepareStatement(sql);
+            psTango.setDate(1, fecha);
 
             rsTango = psTango.executeQuery();
 
