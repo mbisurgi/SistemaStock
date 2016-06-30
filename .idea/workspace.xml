@@ -7,15 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/controller/SistemaStock.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/controller/SistemaStock.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/dao/ArticuloDao.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/dao/ArticuloDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/model/ComprobanteCpaFac.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/model/ComprobanteCpaFac.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/model/ComprobanteVtaFac.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/model/ComprobanteVtaFac.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/SistemaStock.java" afterPath="$PROJECT_DIR$/src/controller/SistemaStock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/ComprobanteDao.java" afterPath="$PROJECT_DIR$/src/dao/ComprobanteDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/ControllerFrmPrincipal.java" afterPath="$PROJECT_DIR$/src/view/ControllerFrmPrincipal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/FrmPrincipal.fxml" afterPath="$PROJECT_DIR$/src/view/FrmPrincipal.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,8 +105,8 @@
       <file leaf-file-name="ComprobanteDao.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dao/ComprobanteDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="470" column="36" selection-start-line="470" selection-start-column="36" selection-end-line="470" selection-end-column="36" />
+            <state relative-caret-position="568">
+              <caret line="483" column="51" selection-start-line="483" selection-start-column="51" selection-end-line="483" selection-end-column="51" />
               <folding>
                 <element signature="method#getComprobantes#0;class#ComprobanteDao#0" expanded="false" />
                 <marker date="1467314946182" expanded="true" signature="652:748" ph="Insert Into comprobantes... " />
@@ -976,7 +968,7 @@
       <workItem from="1467136836415" duration="13988000" />
       <workItem from="1467210528602" duration="5226000" />
       <workItem from="1467229541446" duration="166000" />
-      <workItem from="1467307154849" duration="5754000" />
+      <workItem from="1467307154849" duration="6396000" />
     </task>
     <task id="LOCAL-00001" summary="Controlador">
       <created>1465831772322</created>
@@ -1111,11 +1103,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467311469653</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Ingreso y actualizacion de stock">
+      <created>1467314990868</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1467314990868</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137388000" />
+    <option name="totallyTimeSpent" value="138030000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1501,8 +1500,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/ComprobanteDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="470" column="36" selection-start-line="470" selection-start-column="36" selection-end-line="470" selection-end-column="36" />
+        <state relative-caret-position="568">
+          <caret line="483" column="51" selection-start-line="483" selection-start-column="51" selection-end-line="483" selection-end-column="51" />
           <folding>
             <element signature="method#getComprobantes#0;class#ComprobanteDao#0" expanded="false" />
             <marker date="1467314946182" expanded="true" signature="652:748" ph="Insert Into comprobantes... " />
