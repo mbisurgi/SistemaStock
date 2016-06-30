@@ -38,7 +38,7 @@ public class ControllerFrmPrincipal {
         try {
             SistemaStock.getInstancia().sincronizarArticulos();
 
-            mostrarMensaje("Articulos");
+            mostrarMensaje("Sincronizacion Exitosa", "Articulos sincronizados correctamente");
         } catch (Exception ex) {
             mostrarError(ex);
         }
@@ -48,14 +48,20 @@ public class ControllerFrmPrincipal {
         try {
             SistemaStock.getInstancia().sincronizarComprobantes();
 
-            mostrarMensaje("Comprobantes");
+            mostrarMensaje("Sincronizacion Exitosa", "Comprobantes sincronizados correctamente");
         } catch (Exception ex) {
             mostrarError(ex);
         }
     }
 
     public void btnIngresoStockOnClick() {
-        SistemaStock.getInstancia().ingresarStock();
+        try {
+            SistemaStock.getInstancia().ingresarStock();
+
+            mostrarMensaje("Procesado", "Ingreso de stock generado correctamente");
+        } catch (Exception ex) {
+            mostrarError(ex);
+        }
     }
 
     public void btnEgresoStockOnClick() {
@@ -83,11 +89,11 @@ public class ControllerFrmPrincipal {
         }
     }
 
-    private void mostrarMensaje(String msg) {
+    private void mostrarMensaje(String titulo, String msg) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setTitle("Sincronizacion Exitosa");
+        alert.setTitle(titulo);
         alert.setHeaderText(null);
-        alert.setContentText(msg + " sincronizados correctamente");
+        alert.setContentText(msg);
         alert.showAndWait();
     }
 

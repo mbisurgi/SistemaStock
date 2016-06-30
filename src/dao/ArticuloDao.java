@@ -37,6 +37,29 @@ public class ArticuloDao extends AbstractDao {
 
     }
 
+    public void insertItemStock(Articulo art, Date fecha, int cantidad, double precio) {
+        Connection con = PoolConnection.getInstancia().getConnection();
+
+        ItemStock itemStock = new ItemStock(fecha, cantidad, precio);
+
+        try {
+            String sql = "Insert Into itemsstock (nroArticulo, fecha, cantidad, precio, cantidadDisponible) Values (?, ?, ?, ?, ?)";
+
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1, art.getNroArticulo());
+            ps.setDate(2, itemStock.getFecha());
+            ps.setInt(3, itemStock.getCantidad());
+            ps.setDouble(4, itemStock.getPrecio());
+            ps.setInt(5, itemStock.getCantidadDisponible());
+
+            ps.executeUpdate();
+        } catch (SQLException ex) {
+
+        } finally {
+            PoolConnection.getInstancia().releaseConnection(con);
+        }
+    }
+
     public Articulo getArticulo(String nroArticulo) {
         Articulo art = new Articulo();
 
