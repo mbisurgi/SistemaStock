@@ -37,6 +37,24 @@ public class ArticuloDao extends AbstractDao {
 
     }
 
+    public void updateItemStock(int idItemStock, int cantidad) {
+        Connection con = PoolConnection.getInstancia().getConnection();
+
+        try {
+            String sql = "Update itemsstock Set cantidadDisponible = ? Where idItem = ?";
+
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setInt(1, cantidad);
+            ps.setInt(2, idItemStock);
+
+            ps.executeUpdate();
+        } catch (SQLException ex) {
+
+        } finally {
+            PoolConnection.getInstancia().releaseConnection(con);
+        }
+    }
+
     public void insertItemStock(Articulo art, Date fecha, int cantidad, double precio) {
         Connection con = PoolConnection.getInstancia().getConnection();
 
@@ -51,6 +69,29 @@ public class ArticuloDao extends AbstractDao {
             ps.setInt(3, itemStock.getCantidad());
             ps.setDouble(4, itemStock.getPrecio());
             ps.setInt(5, itemStock.getCantidadDisponible());
+
+            ps.executeUpdate();
+        } catch (SQLException ex) {
+
+        } finally {
+            PoolConnection.getInstancia().releaseConnection(con);
+        }
+    }
+
+    public void insertItemMargenUnidad(Articulo art, Date fecha, int cantidad, double precioCpa, double precioVta) {
+        Connection con = PoolConnection.getInstancia().getConnection();
+
+        ItemMargenUnidad itemMargen = new ItemMargenUnidad(fecha, cantidad, precioCpa, precioVta);
+
+        try {
+            String sql = "Insert Into itemsmargen (nroArticulo, fecha, cantidad, precioCpa, precioVta) Values (?, ?, ?, ?, ?)";
+
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1, art.getNroArticulo());
+            ps.setDate(2, itemMargen.getFecha());
+            ps.setInt(3, itemMargen.getCantidad());
+            ps.setDouble(4, itemMargen.getPrecioCpa());
+            ps.setDouble(5, itemMargen.getPrecioVta());
 
             ps.executeUpdate();
         } catch (SQLException ex) {
@@ -102,6 +143,7 @@ public class ArticuloDao extends AbstractDao {
                 art.setNroArticulo(rs.getString("nroArticulo"));
                 art.setNombreArticulo(rs.getString("nombreArticulo"));
                 art.getStock().setItems(getItemsStock(rs.getString("nroArticulo")));
+                art.getMargen().setItems(getItemsMargen(rs.getString("nroArticulo")));
 
                 listado.add(art);
             }
@@ -120,7 +162,7 @@ public class ArticuloDao extends AbstractDao {
         Connection con = PoolConnection.getInstancia().getConnection();
 
         try {
-            String sql = "Select * From itemsstock Where nroArticulo = ? And cantidadDisponible > 0";
+            String sql = "Select * From itemsstock Where nroArticulo = ? And cantidadDisponible > 0 Order By fecha Asc";
 
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1, nroArticulo);
@@ -153,7 +195,7 @@ public class ArticuloDao extends AbstractDao {
         Connection con = PoolConnection.getInstancia().getConnection();
 
         try {
-            String sql = "Select * From itemsmargen Where nroArticulo = ?";
+            String sql = "Select * From itemsmargen Where nroArticulo = ? Order By fecha Asc";
 
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1, nroArticulo);

@@ -49,6 +49,7 @@ public class Stock {
 
                 if (cantidadDisponible >= cantidadResta) {
                     itemDescontado = new ItemStock();
+                    itemDescontado.setIdItem(item.getIdItem());
                     itemDescontado.setFecha(item.getFecha());
                     itemDescontado.setCantidad(item.getCantidad());
                     itemDescontado.setPrecio(item.getPrecio());
@@ -63,6 +64,7 @@ public class Stock {
 
                 if (cantidadDisponible < cantidadResta) {
                     itemDescontado = new ItemStock();
+                    itemDescontado.setIdItem(item.getIdItem());
                     itemDescontado.setFecha(item.getFecha());
                     itemDescontado.setCantidad(item.getCantidad());
                     itemDescontado.setPrecio(item.getPrecio());

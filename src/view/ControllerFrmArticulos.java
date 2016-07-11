@@ -6,6 +6,8 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.paint.Color;
 import model.Articulo;
 import model.ItemStock;
@@ -72,6 +74,36 @@ public class ControllerFrmArticulos {
         movimientosStock.clear();
 
         movimientosStock.addAll(art.getStock().getItems());
+    }
+
+    public void lblBuscarOnKeyPressed(KeyEvent keyEvent) {
+        if (keyEvent.getCode() == KeyCode.ENTER) {
+            Articulo art = sistema.buscarArticulo(txtNroArticulo.getText());
+
+            if (art != null) {
+                lblNro.setText(art.getNroArticulo());
+                lblNro.setTextFill(Color.BLACK);
+                lblNombre.setText(art.getNombreArticulo());
+                lblNombre.setTextFill(Color.BLACK);
+                lblCantidad.setText(String.valueOf(art.getStock().getCantidad()));
+                lblValorizado.setText(String.valueOf(art.getStock().valorizar()));
+                cboValorizacion.setDisable(false);
+                cboValorizacion.getSelectionModel().clearSelection();
+                lblMargen.setText(String.valueOf(art.getMargen().margen()));
+                cargarMovimientosStock(art);
+            }
+            else {
+                lblNro.setText("invalido");
+                lblNro.setTextFill(Color.RED);
+                lblNombre.setText("invalido");
+                lblNombre.setTextFill(Color.RED);
+                lblCantidad.setText("");
+                lblValorizado.setText("");
+                cboValorizacion.setDisable(true);
+                cboValorizacion.getSelectionModel().clearSelection();
+                lblMargen.setText("");
+            }
+        }
     }
 
     public void lblBuscarOnMouseClicked() {
