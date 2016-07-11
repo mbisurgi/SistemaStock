@@ -119,7 +119,7 @@ public class SistemaStock {
     }
 
     public void sincronizarComprobantes(Date fecha) {
-        ComprobanteDao.getInstancia().sincronizarComprobantes();
+        ComprobanteDao.getInstancia().sincronizarComprobantes(fecha);
     }
 
     public void ingresarStock() {
@@ -141,7 +141,7 @@ public class SistemaStock {
             if (comp.getClass() == ComprobanteVtaFac.class) {
                 comp.updateStock();
 
-                //ComprobanteDao.getInstancia().update(comp);
+                ComprobanteDao.getInstancia().update(comp);
             }
         }
     }

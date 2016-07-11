@@ -34,7 +34,7 @@ public class ControllerFrmPrincipal {
     MenuItem menuConsultaArticulo;
 
     public void initialize() {
-
+        SistemaStock.getInstancia();
     }
 
     public void btnSyncArticulosOnClick() {
@@ -68,11 +68,23 @@ public class ControllerFrmPrincipal {
     }
 
     public void btnEgresoStockOnClick() {
-        SistemaStock.getInstancia().egresarStock();
+        try {
+            SistemaStock.getInstancia().egresarStock();
+
+            mostrarMensaje("Procesado", "Egreso de stock generado correctamente");
+        } catch (Exception ex) {
+            mostrarError(ex);
+        }
     }
 
     public void btnMargenPrecioOnClick() {
+        try {
+            SistemaStock.getInstancia().generarMargenPrecio();
 
+            mostrarMensaje("Procesado", "Margen generado correctamente");
+        } catch (Exception ex) {
+            mostrarError(ex);
+        }
     }
 
     public void menuConsultaArticuloOnClick(ActionEvent event) {
