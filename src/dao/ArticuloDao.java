@@ -29,6 +29,8 @@ public class ArticuloDao extends AbstractDao {
 
     @Override
     public void update(Object obj) {
+        Articulo art = (Articulo)obj;
+
 
     }
 
@@ -37,15 +39,33 @@ public class ArticuloDao extends AbstractDao {
 
     }
 
-    public void updateItemStock(int idItemStock, int cantidad) {
+    public  void updateItems(Articulo art) {
+        Connection con = PoolConnection.getInstancia().getConnection();
+
+        try {
+            for (ItemStock itemStock: art.getStock().getItems()) {
+                if (itemStock.getIdItem() != 0) {
+                    updateItemStock(itemStock);
+                } else {
+                    insertItemStock(art.getNroArticulo(), itemStock);
+                }
+            }
+        } catch (Exception ex) {
+
+        } finally {
+            PoolConnection.getInstancia().releaseConnection(con);
+        }
+    }
+
+    public void updateItemStock(ItemStock item) {
         Connection con = PoolConnection.getInstancia().getConnection();
 
         try {
             String sql = "Update itemsstock Set cantidadDisponible = ? Where idItem = ?";
 
             PreparedStatement ps = con.prepareStatement(sql);
-            ps.setInt(1, cantidad);
-            ps.setInt(2, idItemStock);
+            ps.setInt(1, item.getCantidadDisponible());
+            ps.setInt(2, item.getIdItem());
 
             ps.executeUpdate();
         } catch (SQLException ex) {
@@ -55,22 +75,24 @@ public class ArticuloDao extends AbstractDao {
         }
     }
 
-    public void insertItemStock(Articulo art, Date fecha, int cantidad, double precio) {
+    public void insertItemStock(String nroArticulo, ItemStock item) {
         Connection con = PoolConnection.getInstancia().getConnection();
 
-        ItemStock itemStock = new ItemStock(fecha, cantidad, precio);
-
         try {
-            String sql = "Insert Into itemsstock (nroArticulo, fecha, cantidad, precio, cantidadDisponible) Values (?, ?, ?, ?, ?)";
+            String sql = "Insert Into itemsstock (nroArticulo, fecha, cantidad, precio, cantidadDisponible) Values (?, ?, ?, ?, ?); Select @@IDENTITY";
 
             PreparedStatement ps = con.prepareStatement(sql);
-            ps.setString(1, art.getNroArticulo());
-            ps.setDate(2, itemStock.getFecha());
-            ps.setInt(3, itemStock.getCantidad());
-            ps.setDouble(4, itemStock.getPrecio());
-            ps.setInt(5, itemStock.getCantidadDisponible());
+            ps.setString(1, nroArticulo);
+            ps.setDate(2, item.getFecha());
+            ps.setInt(3, item.getCantidad());
+            ps.setDouble(4, item.getPrecio());
+            ps.setInt(5, item.getCantidadDisponible());
 
-            ps.executeUpdate();
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                item.setIdItem(rs.getInt(1));
+            }
         } catch (SQLException ex) {
 
         } finally {
