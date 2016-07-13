@@ -32,6 +32,8 @@ public class ControllerFrmPrincipal {
     Button btnMargenPrecio;
     @FXML
     MenuItem menuConsultaArticulo;
+    @FXML
+    MenuItem menuConsultaMargenes;
 
     public void initialize() {
         SistemaStock.getInstancia();
@@ -91,11 +93,28 @@ public class ControllerFrmPrincipal {
         loadFrmArticulos(event);
     }
 
+    public void menuConsultaMargenesOnClick(ActionEvent event) {
+        loadFrmMargenes(event);
+    }
+
     private void loadFrmArticulos(ActionEvent event) {
         try {
             Parent parent = FXMLLoader.load(getClass().getResource("FrmArticulos.fxml"));
             Stage stage = new Stage();
             stage.setTitle("Articulos");
+            stage.setScene(new Scene(parent, 600, 500));
+            stage.setResizable(false);
+            stage.show();
+        } catch (IOException ex) {
+            mostrarError(ex);
+        }
+    }
+
+    private void loadFrmMargenes(ActionEvent event) {
+        try {
+            Parent parent = FXMLLoader.load(getClass().getResource("FrmMargenes.fxml"));
+            Stage stage = new Stage();
+            stage.setTitle("Margenes");
             stage.setScene(new Scene(parent, 600, 500));
             stage.setResizable(false);
             stage.show();

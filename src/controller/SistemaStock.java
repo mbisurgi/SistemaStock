@@ -183,6 +183,18 @@ public class SistemaStock {
         return valorizado;
     }
 
+    public List<Articulo> getArticulos() {
+        List<Articulo> listado = new ArrayList<>();
+
+        for (Articulo art: articulos) {
+            if (art.margen() != 0) {
+                listado.add(art);
+            }
+        }
+
+        return listado;
+    }
+
     public Articulo buscarArticulo(String nroArticulo) {
         for (Articulo art: articulos) {
             if (art.getNroArticulo().equals(nroArticulo)) {
