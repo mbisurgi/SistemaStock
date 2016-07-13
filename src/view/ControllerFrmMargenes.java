@@ -36,7 +36,7 @@ public class ControllerFrmMargenes {
     private void configurarTableViewMovimientosStock() {
         colNroArticulo.setCellValueFactory(new PropertyValueFactory<>("nroArticulo"));
         colNombreArticulo.setCellValueFactory(new PropertyValueFactory<>("nombreArticulo"));
-        colMargen.setCellValueFactory(new PropertyValueFactory<Articulo, Double>("margen"));
+        colMargen.setCellValueFactory(new PropertyValueFactory<>("margen"));
 
         tblArticulosMargen.setItems(articulos);
     }
