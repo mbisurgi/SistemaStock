@@ -50,6 +50,18 @@ public class ArticuloDao extends AbstractDao {
                     insertItemStock(art.getNroArticulo(), itemStock);
                 }
             }
+
+            for (ItemMargen itemMargen: art.getMargen().getItems()) {
+                if (itemMargen.getClass() == ItemMargenUnidad.class) {
+                    ItemMargenUnidad itemMargenUnidad = (ItemMargenUnidad)itemMargen;
+                    insertItemMargenUnidad(art.getNroArticulo(), itemMargenUnidad);
+                }
+
+                if (itemMargen.getClass() == ItemMargenPrecio.class) {
+                    ItemMargenPrecio itemMargenPrecio = (ItemMargenPrecio)itemMargen;
+                    insertItemMargenPrecio(art.getNroArticulo(), itemMargenPrecio);
+                }
+            }
         } catch (Exception ex) {
 
         } finally {
@@ -102,22 +114,26 @@ public class ArticuloDao extends AbstractDao {
         }
     }
 
-    public void insertItemMargenUnidad(Articulo art, Date fecha, int cantidad, double precioCpa, double precioVta) {
+    public void insertItemMargenUnidad(String nroArticulo, ItemMargenUnidad item) {
         Connection con = PoolConnection.getInstancia().getConnection();
-
-        ItemMargenUnidad itemMargen = new ItemMargenUnidad(fecha, cantidad, precioCpa, precioVta);
 
         try {
             String sql = "Insert Into itemsmargen (nroArticulo, fecha, cantidad, precioCpa, precioVta) Values (?, ?, ?, ?, ?)";
 
-            PreparedStatement ps = con.prepareStatement(sql);
-            ps.setString(1, art.getNroArticulo());
-            ps.setDate(2, itemMargen.getFecha());
-            ps.setInt(3, itemMargen.getCantidad());
-            ps.setDouble(4, itemMargen.getPrecioCpa());
-            ps.setDouble(5, itemMargen.getPrecioVta());
+            PreparedStatement ps = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            ps.setString(1, nroArticulo);
+            ps.setDate(2, item.getFecha());
+            ps.setInt(3, item.getCantidad());
+            ps.setDouble(4, item.getPrecioCpa());
+            ps.setDouble(5, item.getPrecioVta());
 
             ps.executeUpdate();
+
+            ResultSet rs = ps.getGeneratedKeys();
+
+            if (rs.next()) {
+                item.setIdItem(rs.getInt(1));
+            }
         } catch (SQLException ex) {
 
         } finally {
@@ -125,20 +141,24 @@ public class ArticuloDao extends AbstractDao {
         }
     }
 
-    public void insertItemMargenPrecio(Articulo art, Date fecha, double precio) {
+    public void insertItemMargenPrecio(String nroArticulo, ItemMargenPrecio item) {
         Connection con = PoolConnection.getInstancia().getConnection();
-
-        ItemMargenPrecio itemMargen = new ItemMargenPrecio(fecha, precio);
 
         try {
             String sql = "Insert Into itemsmargen (nroArticulo, fecha, precio) Values (?, ?, ?)";
 
-            PreparedStatement ps = con.prepareStatement(sql);
-            ps.setString(1, art.getNroArticulo());
-            ps.setDate(2, itemMargen.getFecha());
-            ps.setDouble(3, itemMargen.getPrecio());
+            PreparedStatement ps = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+            ps.setString(1, nroArticulo);
+            ps.setDate(2, item.getFecha());
+            ps.setDouble(3, item.getPrecio());
 
             ps.executeUpdate();
+
+            ResultSet rs = ps.getGeneratedKeys();
+
+            if (rs.next()) {
+                item.setIdItem(rs.getInt(1));
+            }
         } catch (SQLException ex) {
 
         } finally {
