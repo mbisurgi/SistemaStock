@@ -17,7 +17,9 @@ public class ComprobanteCpaFac extends ComprobanteCpa {
     @Override
     public void updateStock() {
         for (ItemComprobante item: items) {
-            item.getArticulo().addItemStock(fecha, item.getCantidad(), item.getPrecio());
+            Articulo art = SistemaStock.getInstancia().buscarArticulo(item.getArticulo().getNroArticulo());
+
+            art.addItemStock(fecha, item.getCantidad(), item.getPrecio());
         }
     }
 }

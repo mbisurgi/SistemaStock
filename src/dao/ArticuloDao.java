@@ -79,16 +79,18 @@ public class ArticuloDao extends AbstractDao {
         Connection con = PoolConnection.getInstancia().getConnection();
 
         try {
-            String sql = "Insert Into itemsstock (nroArticulo, fecha, cantidad, precio, cantidadDisponible) Values (?, ?, ?, ?, ?); Select @@IDENTITY";
+            String sql = "Insert Into itemsstock (nroArticulo, fecha, cantidad, precio, cantidadDisponible) Values (?, ?, ?, ?, ?)";
 
-            PreparedStatement ps = con.prepareStatement(sql);
+            PreparedStatement ps = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             ps.setString(1, nroArticulo);
             ps.setDate(2, item.getFecha());
             ps.setInt(3, item.getCantidad());
             ps.setDouble(4, item.getPrecio());
             ps.setInt(5, item.getCantidadDisponible());
 
-            ResultSet rs = ps.executeQuery();
+            ps.executeUpdate();
+
+            ResultSet rs = ps.getGeneratedKeys();
 
             if (rs.next()) {
                 item.setIdItem(rs.getInt(1));

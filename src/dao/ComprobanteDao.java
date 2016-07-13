@@ -238,7 +238,7 @@ public class ComprobanteDao extends AbstractDao{
         Connection con = PoolConnection.getInstancia().getConnection();
 
         try {
-            String sql = "Select * From comprobantes Where movimientoStock = ?";
+            String sql = "Select * From comprobantes Where movimientoStock = ? Order By fecha Asc";
 
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setInt(1, 0);
