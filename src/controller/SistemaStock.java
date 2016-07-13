@@ -164,6 +164,10 @@ public class SistemaStock {
                 ComprobanteDao.getInstancia().update(comp);
             }
         }
+
+        for (Articulo art: articulos) {
+            ArticuloDao.getInstancia().updateItems(art);
+        }
     }
 
     public double valorizar(String nroArticulo, Valorizacion valorizacion) {

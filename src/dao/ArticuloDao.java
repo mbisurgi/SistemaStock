@@ -52,12 +52,12 @@ public class ArticuloDao extends AbstractDao {
             }
 
             for (ItemMargen itemMargen: art.getMargen().getItems()) {
-                if (itemMargen.getClass() == ItemMargenUnidad.class) {
+                if (itemMargen.getClass() == ItemMargenUnidad.class && itemMargen.getIdItem() == 0) {
                     ItemMargenUnidad itemMargenUnidad = (ItemMargenUnidad)itemMargen;
                     insertItemMargenUnidad(art.getNroArticulo(), itemMargenUnidad);
                 }
 
-                if (itemMargen.getClass() == ItemMargenPrecio.class) {
+                if (itemMargen.getClass() == ItemMargenPrecio.class && itemMargen.getIdItem() == 0) {
                     ItemMargenPrecio itemMargenPrecio = (ItemMargenPrecio)itemMargen;
                     insertItemMargenPrecio(art.getNroArticulo(), itemMargenPrecio);
                 }
