@@ -1,5 +1,7 @@
 package model;
 
+import controller.SistemaStock;
+
 import java.sql.Date;
 
 public class ComprobanteCpaCre extends ComprobanteCpa {
@@ -14,9 +16,10 @@ public class ComprobanteCpaCre extends ComprobanteCpa {
     @Override
     public void updateStock() {
         for (ItemComprobante item: items) {
-            ItemMargen itemMargen = new ItemMargenPrecio(this.fecha, (item.getCantidad() * item.getPrecio()));
+            Articulo art = SistemaStock.getInstancia().buscarArticulo(item.getArticulo().getNroArticulo());
 
-            item.getArticulo().addItemMargen(itemMargen);
+            ItemMargen itemMargen = new ItemMargenPrecio(this.fecha, (item.getCantidad() * item.getPrecio()));
+            art.addItemMargen(itemMargen);
         }
     }
 }

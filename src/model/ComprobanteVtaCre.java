@@ -20,7 +20,7 @@ public class ComprobanteVtaCre extends ComprobanteVta {
             Articulo art = SistemaStock.getInstancia().buscarArticulo(item.getArticulo().getNroArticulo());
 
             ItemMargen itemMargen = new ItemMargenPrecio(this.fecha, (item.getCantidad() * item.getPrecio()) * -1);
-            item.getArticulo().addItemMargen(itemMargen);
+            art.addItemMargen(itemMargen);
         }
     }
 }
