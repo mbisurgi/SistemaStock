@@ -7,12 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/controller/SistemaStock.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/controller/SistemaStock.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/dao/ArticuloDao.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/dao/ArticuloDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/model/ComprobanteCpaFac.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/model/ComprobanteCpaFac.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/model/ComprobanteVtaFac.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/model/ComprobanteVtaFac.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/dao/ComprobanteDao.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/dao/ComprobanteDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/dao/PoolConnection.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/dao/PoolConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/model/ComprobanteVtaCre.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/model/ComprobanteVtaCre.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/view/FrmPrincipal.fxml" afterPath="$PROJECT_DIR$/out/production/SistemaStock/view/FrmPrincipal.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/ComprobanteVtaCre.java" afterPath="$PROJECT_DIR$/src/model/ComprobanteVtaCre.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -99,23 +99,35 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ComprobanteVtaCre.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/ComprobanteVtaCre.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ArticuloDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/ArticuloDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-242">
-              <caret line="109" column="13" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
+            <state relative-caret-position="404">
+              <caret line="129" column="13" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
               <folding>
-                <marker date="1468420135932" expanded="true" signature="1368:1429" ph="Update items... " />
-                <marker date="1468420135932" expanded="true" signature="1951:2055" ph="Insert Into itemsstock... " />
-                <marker date="1468420135932" expanded="true" signature="3033:3132" ph="Insert Into itemsmargen... " />
-                <marker date="1468420135932" expanded="true" signature="3907:3976" ph="Insert Into itemsmargen... " />
-                <marker date="1468420135932" expanded="true" signature="4576:4621" ph="Select * Fro... articulos" />
-                <marker date="1468420135932" expanded="true" signature="5395:5418" ph="Select * Fro... articulos" />
-                <marker date="1468420135932" expanded="true" signature="6256:6348" ph="Select * Fro... itemsstock" />
-                <marker date="1468420135932" expanded="true" signature="7331:7397" ph="Select * Fro... itemsmargen" />
-                <marker date="1468420135932" expanded="true" signature="9030:9053" ph="Select * Fro... articulos" />
-                <marker date="1468420135932" expanded="true" signature="9312:9352" ph="Select COD_A... STA11" />
-                <marker date="1468420135932" expanded="true" signature="9785:9850" ph="Insert Into articulos... " />
+                <marker date="1468422264559" expanded="true" signature="1972:2033" ph="Update items... " />
+                <marker date="1468422264559" expanded="true" signature="2555:2659" ph="Insert Into itemsstock... " />
+                <marker date="1468422264559" expanded="true" signature="3504:3603" ph="Insert Into itemsmargen... " />
+                <marker date="1468422264559" expanded="true" signature="4445:4514" ph="Insert Into itemsmargen... " />
+                <marker date="1468422264559" expanded="true" signature="5267:5312" ph="Select * Fro... articulos" />
+                <marker date="1468422264559" expanded="true" signature="6086:6109" ph="Select * Fro... articulos" />
+                <marker date="1468422264559" expanded="true" signature="6947:7039" ph="Select * Fro... itemsstock" />
+                <marker date="1468422264559" expanded="true" signature="8022:8088" ph="Select * Fro... itemsmargen" />
+                <marker date="1468422264559" expanded="true" signature="9721:9744" ph="Select * Fro... articulos" />
+                <marker date="1468422264559" expanded="true" signature="10003:10043" ph="Select COD_A... STA11" />
+                <marker date="1468422264559" expanded="true" signature="10476:10541" ph="Insert Into articulos... " />
               </folding>
             </state>
           </provider>
@@ -143,10 +155,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComprobanteDao.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ComprobanteDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/ComprobanteDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
+            <state relative-caret-position="829">
               <caret line="234" column="54" selection-start-line="234" selection-start-column="54" selection-end-line="234" selection-end-column="54" />
               <folding>
                 <element signature="method#getComprobantes#0;class#ComprobanteDao#0" expanded="false" />
@@ -239,12 +251,12 @@
         <option value="$PROJECT_DIR$/src/model/ItemStock.java" />
         <option value="$PROJECT_DIR$/src/model/Stock.java" />
         <option value="$PROJECT_DIR$/src/model/ComprobanteVtaFac.java" />
-        <option value="$PROJECT_DIR$/src/model/ComprobanteVtaCre.java" />
         <option value="$PROJECT_DIR$/src/dao/PoolConnection.java" />
         <option value="$PROJECT_DIR$/src/model/ComprobanteCpaFac.java" />
         <option value="$PROJECT_DIR$/src/controller/SistemaStock.java" />
         <option value="$PROJECT_DIR$/src/dao/ArticuloDao.java" />
         <option value="$PROJECT_DIR$/src/dao/ComprobanteDao.java" />
+        <option value="$PROJECT_DIR$/src/model/ComprobanteVtaCre.java" />
       </list>
     </option>
   </component>
@@ -476,6 +488,116 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
     </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/dao/ArticuloDao.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -988,7 +1110,7 @@
       <workItem from="1468258066195" duration="9006000" />
       <workItem from="1468333203335" duration="9304000" />
       <workItem from="1468411566903" duration="4000" />
-      <workItem from="1468417534291" duration="3278000" />
+      <workItem from="1468417534291" duration="4871000" />
     </task>
     <task id="LOCAL-00001" summary="Controlador">
       <created>1465831772322</created>
@@ -1151,11 +1273,18 @@
       <option name="project" value="LOCAL" />
       <updated>1468420706503</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Ingreso y actualizacion de stock">
+      <created>1468420841402</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1468420841402</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159622000" />
+    <option name="totallyTimeSpent" value="161215000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1172,12 +1301,12 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735425" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283767" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30829597" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1429,16 +1558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteVtaCre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/ItemStock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
@@ -1507,29 +1626,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/ArticuloDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="109" column="13" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
-          <folding>
-            <marker date="1468420135932" expanded="true" signature="1368:1429" ph="Update items... " />
-            <marker date="1468420135932" expanded="true" signature="1951:2055" ph="Insert Into itemsstock... " />
-            <marker date="1468420135932" expanded="true" signature="3033:3132" ph="Insert Into itemsmargen... " />
-            <marker date="1468420135932" expanded="true" signature="3907:3976" ph="Insert Into itemsmargen... " />
-            <marker date="1468420135932" expanded="true" signature="4576:4621" ph="Select * Fro... articulos" />
-            <marker date="1468420135932" expanded="true" signature="5395:5418" ph="Select * Fro... articulos" />
-            <marker date="1468420135932" expanded="true" signature="6256:6348" ph="Select * Fro... itemsstock" />
-            <marker date="1468420135932" expanded="true" signature="7331:7397" ph="Select * Fro... itemsmargen" />
-            <marker date="1468420135932" expanded="true" signature="9030:9053" ph="Select * Fro... articulos" />
-            <marker date="1468420135932" expanded="true" signature="9312:9352" ph="Select COD_A... STA11" />
-            <marker date="1468420135932" expanded="true" signature="9785:9850" ph="Insert Into articulos... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/ComprobanteDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
+        <state relative-caret-position="829">
           <caret line="234" column="54" selection-start-line="234" selection-start-column="54" selection-end-line="234" selection-end-column="54" />
           <folding>
             <element signature="method#getComprobantes#0;class#ComprobanteDao#0" expanded="false" />
@@ -1545,6 +1644,36 @@
             <marker date="1468420580839" expanded="true" signature="14524:14550" ph="Select * Fro... comprobantes" />
             <marker date="1468420580839" expanded="true" signature="14825:14934" ph="Select NCOMP... CPA04" />
             <marker date="1468420580839" expanded="true" signature="16568:16645" ph="Select T_COM... GVA12" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/ArticuloDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="129" column="13" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
+          <folding>
+            <marker date="1468422264559" expanded="true" signature="1972:2033" ph="Update items... " />
+            <marker date="1468422264559" expanded="true" signature="2555:2659" ph="Insert Into itemsstock... " />
+            <marker date="1468422264559" expanded="true" signature="3504:3603" ph="Insert Into itemsmargen... " />
+            <marker date="1468422264559" expanded="true" signature="4445:4514" ph="Insert Into itemsmargen... " />
+            <marker date="1468422264559" expanded="true" signature="5267:5312" ph="Select * Fro... articulos" />
+            <marker date="1468422264559" expanded="true" signature="6086:6109" ph="Select * Fro... articulos" />
+            <marker date="1468422264559" expanded="true" signature="6947:7039" ph="Select * Fro... itemsstock" />
+            <marker date="1468422264559" expanded="true" signature="8022:8088" ph="Select * Fro... itemsmargen" />
+            <marker date="1468422264559" expanded="true" signature="9721:9744" ph="Select * Fro... articulos" />
+            <marker date="1468422264559" expanded="true" signature="10003:10043" ph="Select COD_A... STA11" />
+            <marker date="1468422264559" expanded="true" signature="10476:10541" ph="Insert Into articulos... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteVtaCre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="55" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
