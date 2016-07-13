@@ -76,4 +76,8 @@ public class Articulo {
     public double margen() {
         return this.margen.margen();
     }
+
+    public ArticuloView getArticuloView() {
+        return new ArticuloView(this.nroArticulo, this.nombreArticulo, this.margen());
+    }
 }

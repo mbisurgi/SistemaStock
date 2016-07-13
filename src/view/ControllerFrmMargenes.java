@@ -7,23 +7,22 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import model.Articulo;
-import model.ItemMargen;
+import model.ArticuloView;
 
 import java.sql.Date;
 
 public class ControllerFrmMargenes {
     @FXML
-    TableView<Articulo> tblArticulosMargen;
+    TableView<ArticuloView> tblArticulosMargen;
     @FXML
-    TableColumn<Articulo, String> colNroArticulo;
+    TableColumn<ArticuloView, String> colNroArticulo;
     @FXML
-    TableColumn<Articulo, String> colNombreArticulo;
+    TableColumn<ArticuloView, String> colNombreArticulo;
     @FXML
-    TableColumn<Articulo, Double> colMargen;
+    TableColumn<ArticuloView, Double> colMargen;
 
     private SistemaStock sistema = null;
-    private ObservableList<Articulo> articulos;
+    private ObservableList<ArticuloView> articulos;
 
     public void initialize() {
         sistema = SistemaStock.getInstancia();
