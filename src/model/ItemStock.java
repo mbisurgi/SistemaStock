@@ -8,6 +8,7 @@ public class ItemStock {
     private int cantidad;
     private double precio;
     private int cantidadDisponible;
+    private int cantidadRestante;
 
     public ItemStock() {
 
@@ -58,6 +59,14 @@ public class ItemStock {
 
     public void setCantidadDisponible(int cantidadDisponible) {
         this.cantidadDisponible = cantidadDisponible;
+    }
+
+    public int getCantidadRestante() {
+        return cantidadRestante;
+    }
+
+    public void setCantidadRestante(int cantidadRestante) {
+        this.cantidadRestante = cantidadRestante;
     }
 
     public double getValorizado() {

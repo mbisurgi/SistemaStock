@@ -54,6 +54,7 @@ public class Stock {
                     itemDescontado.setCantidad(item.getCantidad());
                     itemDescontado.setPrecio(item.getPrecio());
                     itemDescontado.setCantidadDisponible(cantidadResta);
+                    itemDescontado.setCantidadRestante(cantidadDisponible - cantidadResta);
 
                     itemsDescontados.add(itemDescontado);
 
@@ -69,6 +70,7 @@ public class Stock {
                     itemDescontado.setCantidad(item.getCantidad());
                     itemDescontado.setPrecio(item.getPrecio());
                     itemDescontado.setCantidadDisponible(item.getCantidadDisponible());
+                    itemDescontado.setCantidadRestante(0);
 
                     itemsDescontados.add(itemDescontado);
 

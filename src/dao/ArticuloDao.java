@@ -101,6 +101,27 @@ public class ArticuloDao extends AbstractDao {
         }
     }
 
+    public void insertItemMargenPrecio(Articulo art, Date fecha, double precio) {
+        Connection con = PoolConnection.getInstancia().getConnection();
+
+        ItemMargenPrecio itemMargen = new ItemMargenPrecio(fecha, precio);
+
+        try {
+            String sql = "Insert Into itemsmargen (nroArticulo, fecha, precio) Values (?, ?, ?)";
+
+            PreparedStatement ps = con.prepareStatement(sql);
+            ps.setString(1, art.getNroArticulo());
+            ps.setDate(2, itemMargen.getFecha());
+            ps.setDouble(3, itemMargen.getPrecio());
+
+            ps.executeUpdate();
+        } catch (SQLException ex) {
+
+        } finally {
+            PoolConnection.getInstancia().releaseConnection(con);
+        }
+    }
+
     public Articulo getArticulo(String nroArticulo) {
         Articulo art = new Articulo();
 

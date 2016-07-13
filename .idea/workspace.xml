@@ -7,16 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/controller/SistemaStock.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/controller/SistemaStock.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/dao/ArticuloDao.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/dao/ArticuloDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/dao/ComprobanteDao.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/dao/ComprobanteDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/model/ComprobanteVtaCre.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/model/ComprobanteVtaCre.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/model/ComprobanteVtaFac.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/model/ComprobanteVtaFac.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/model/ItemStock.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/model/ItemStock.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/model/Stock.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/model/Stock.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/view/ControllerFrmPrincipal.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/view/ControllerFrmPrincipal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/view/ControllerFrmArticulos.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/view/ControllerFrmArticulos.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/view/FrmPrincipal.fxml" afterPath="$PROJECT_DIR$/out/production/SistemaStock/view/FrmPrincipal.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/view/FrmArticulos.fxml" afterPath="$PROJECT_DIR$/out/production/SistemaStock/view/FrmArticulos.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/ArticuloDao.java" afterPath="$PROJECT_DIR$/src/dao/ArticuloDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/ComprobanteVtaCre.java" afterPath="$PROJECT_DIR$/src/model/ComprobanteVtaCre.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/ComprobanteVtaFac.java" afterPath="$PROJECT_DIR$/src/model/ComprobanteVtaFac.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/ItemStock.java" afterPath="$PROJECT_DIR$/src/model/ItemStock.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Stock.java" afterPath="$PROJECT_DIR$/src/model/Stock.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/ControllerFrmArticulos.java" afterPath="$PROJECT_DIR$/src/view/ControllerFrmArticulos.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/FrmArticulos.fxml" afterPath="$PROJECT_DIR$/src/view/FrmArticulos.fxml" />
@@ -80,11 +82,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SistemaStock.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SistemaStock.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/SistemaStock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="128" column="61" selection-start-line="128" selection-start-column="61" selection-end-line="128" selection-end-column="61" />
+            <state relative-caret-position="135">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#init#0;class#SistemaStock#0" expanded="false" />
@@ -96,31 +98,44 @@
       <file leaf-file-name="ArticuloDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/ArticuloDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1335">
-              <caret line="265" column="13" selection-start-line="265" selection-start-column="13" selection-end-line="265" selection-end-column="13" />
+            <state relative-caret-position="1290">
+              <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
               <folding>
-                <marker date="1468270004000" expanded="true" signature="783:844" ph="Update items... " />
-                <marker date="1468270004000" expanded="true" signature="1431:1535" ph="Insert Into itemsstock... " />
-                <marker date="1468270004000" expanded="true" signature="2368:2467" ph="Insert Into itemsmargen... " />
-                <marker date="1468270004000" expanded="true" signature="3178:3223" ph="Select * Fro... articulos" />
-                <marker date="1468270004000" expanded="true" signature="3997:4020" ph="Select * Fro... articulos" />
-                <marker date="1468270004000" expanded="true" signature="4858:4931" ph="Select * Fro... itemsstock" />
-                <marker date="1468270004000" expanded="true" signature="4858:4950" ph="Select * Fro... itemsstock" />
-                <marker date="1468270004000" expanded="true" signature="5933:5980" ph="Select * Fro... itemsmargen" />
-                <marker date="1468270004000" expanded="true" signature="5933:5999" ph="Select * Fro... itemsmargen" />
-                <marker date="1468270004000" expanded="true" signature="7632:7655" ph="Select * Fro... articulos" />
-                <marker date="1468270004000" expanded="true" signature="7914:7954" ph="Select COD_A... STA11" />
-                <marker date="1468270004000" expanded="true" signature="8387:8452" ph="Insert Into articulos... " />
+                <marker date="1468340966000" expanded="true" signature="783:844" ph="Update items... " />
+                <marker date="1468340966000" expanded="true" signature="1431:1535" ph="Insert Into itemsstock... " />
+                <marker date="1468340966000" expanded="true" signature="2368:2467" ph="Insert Into itemsmargen... " />
+                <marker date="1468340966000" expanded="true" signature="3242:3311" ph="Insert Into itemsmargen... " />
+                <marker date="1468340966000" expanded="true" signature="3911:3956" ph="Select * Fro... articulos" />
+                <marker date="1468340966000" expanded="true" signature="4730:4753" ph="Select * Fro... articulos" />
+                <marker date="1468340966000" expanded="true" signature="5591:5664" ph="Select * Fro... itemsstock" />
+                <marker date="1468340966000" expanded="true" signature="5591:5683" ph="Select * Fro... itemsstock" />
+                <marker date="1468340966000" expanded="true" signature="6666:6713" ph="Select * Fro... itemsmargen" />
+                <marker date="1468340966000" expanded="true" signature="6666:6732" ph="Select * Fro... itemsmargen" />
+                <marker date="1468340966000" expanded="true" signature="8365:8388" ph="Select * Fro... articulos" />
+                <marker date="1468340966000" expanded="true" signature="8647:8687" ph="Select COD_A... STA11" />
+                <marker date="1468340966000" expanded="true" signature="9120:9185" ph="Insert Into articulos... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComprobanteVtaFac.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ComprobanteVtaCre.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/ComprobanteVtaCre.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ComprobanteVtaFac.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/ComprobanteVtaFac.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+            <state relative-caret-position="315">
+              <caret line="25" column="86" selection-start-line="25" selection-start-column="86" selection-end-line="25" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -129,18 +144,8 @@
       <file leaf-file-name="ControllerFrmArticulos.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/ControllerFrmArticulos.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Articulo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/Articulo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="76" column="36" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
+            <state relative-caret-position="2055">
+              <caret line="148" column="13" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -149,8 +154,18 @@
       <file leaf-file-name="Stock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Stock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+            <state relative-caret-position="990">
+              <caret line="72" column="56" selection-start-line="72" selection-start-column="56" selection-end-line="72" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ItemStock.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/ItemStock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="945">
+              <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -159,7 +174,7 @@
       <file leaf-file-name="ComprobanteCpaFac.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/ComprobanteCpaFac.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
+            <state relative-caret-position="225">
               <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -171,8 +186,8 @@
       <file leaf-file-name="ComprobanteDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/ComprobanteDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="428" column="0" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
+            <state relative-caret-position="1305">
+              <caret line="92" column="96" selection-start-line="92" selection-start-column="96" selection-end-line="92" selection-end-column="96" />
               <folding>
                 <element signature="method#getComprobantes#0;class#ComprobanteDao#0" expanded="false" />
                 <marker date="1468258048000" expanded="true" signature="652:748" ph="Insert Into comprobantes... " />
@@ -186,18 +201,6 @@
                 <marker date="1468258048000" expanded="true" signature="14505:14531" ph="Select * Fro... comprobantes" />
                 <marker date="1468258048000" expanded="true" signature="14806:14915" ph="Select NCOMP... CPA04" />
                 <marker date="1468258048000" expanded="true" signature="16549:16626" ph="Select T_COM... GVA12" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerFrmPrincipal.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/ControllerFrmPrincipal.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="81" column="62" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -250,13 +253,11 @@
         <option value="$PROJECT_DIR$/src/model/ComprobanteCompra.java" />
         <option value="$PROJECT_DIR$/src/model/MargenPrecio.java" />
         <option value="$PROJECT_DIR$/src/model/MargenUnidad.java" />
-        <option value="$PROJECT_DIR$/src/model/ItemStock.java" />
         <option value="$PROJECT_DIR$/src/view/Test.java" />
         <option value="$PROJECT_DIR$/src/model/Margen.java" />
         <option value="$PROJECT_DIR$/src/model/Articulo.java" />
         <option value="$PROJECT_DIR$/src/model/Comprobante.java" />
         <option value="$PROJECT_DIR$/src/model/ComprobanteVta.java" />
-        <option value="$PROJECT_DIR$/src/model/ComprobanteVtaCre.java" />
         <option value="$PROJECT_DIR$/src/model/ComprobanteCpa.java" />
         <option value="$PROJECT_DIR$/src/model/ComprobanteCpaCre.java" />
         <option value="$PROJECT_DIR$/src/model/ItemComprobante.java" />
@@ -277,10 +278,12 @@
         <option value="$PROJECT_DIR$/src/dao/ComprobanteDao.java" />
         <option value="$PROJECT_DIR$/src/controller/SistemaStock.java" />
         <option value="$PROJECT_DIR$/src/view/ControllerFrmPrincipal.java" />
-        <option value="$PROJECT_DIR$/src/model/Stock.java" />
-        <option value="$PROJECT_DIR$/src/dao/ArticuloDao.java" />
         <option value="$PROJECT_DIR$/src/view/ControllerFrmArticulos.java" />
+        <option value="$PROJECT_DIR$/src/model/ItemStock.java" />
+        <option value="$PROJECT_DIR$/src/model/Stock.java" />
         <option value="$PROJECT_DIR$/src/model/ComprobanteVtaFac.java" />
+        <option value="$PROJECT_DIR$/src/dao/ArticuloDao.java" />
+        <option value="$PROJECT_DIR$/src/model/ComprobanteVtaCre.java" />
       </list>
     </option>
   </component>
@@ -345,9 +348,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -486,6 +486,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1020,7 +1023,9 @@
       <workItem from="1467210528602" duration="5226000" />
       <workItem from="1467229541446" duration="166000" />
       <workItem from="1467307154849" duration="6396000" />
-      <workItem from="1468258066195" duration="8908000" />
+      <workItem from="1468258066195" duration="9006000" />
+      <workItem from="1468333203335" duration="9304000" />
+      <workItem from="1468411566903" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="Controlador">
       <created>1465831772322</created>
@@ -1169,11 +1174,18 @@
       <option name="project" value="LOCAL" />
       <updated>1468263788561</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Ingreso y actualizacion de stock">
+      <created>1468272126266</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1468272126266</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146938000" />
+    <option name="totallyTimeSpent" value="156344000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1185,18 +1197,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="709" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283767" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3085622" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1206,15 +1216,17 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39579967" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39579967" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3085622" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1361,38 +1373,15 @@
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
-    <entry file="file://$PROJECT_DIR$/src/model/ItemMargenUnidad.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ItemMargenPrecio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ItemMargen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/FrmPrincipal.xsl" />
     <entry file="file://$PROJECT_DIR$/src/view/FrmArticulos.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/PoolConnection.java">
@@ -1406,13 +1395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteVtaCre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1446,20 +1428,40 @@
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
     <entry file="file://$PROJECT_DIR$/src/view/FrmPrincipal.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding />
         </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/ControllerFrmPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
+        <state relative-caret-position="990">
           <caret line="81" column="62" selection-start-line="81" selection-start-column="62" selection-end-line="81" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Margen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Articulo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="76" column="36" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteCpaFac.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1468,8 +1470,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/ComprobanteDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="428" column="0" selection-start-line="428" selection-start-column="0" selection-end-line="428" selection-end-column="0" />
+        <state relative-caret-position="1305">
+          <caret line="92" column="96" selection-start-line="92" selection-start-column="96" selection-end-line="92" selection-end-column="96" />
           <folding>
             <element signature="method#getComprobantes#0;class#ComprobanteDao#0" expanded="false" />
             <marker date="1468258048000" expanded="true" signature="652:748" ph="Insert Into comprobantes... " />
@@ -1487,93 +1489,99 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/SistemaStock.java">
+    <entry file="file://$PROJECT_DIR$/src/model/ItemMargenUnidad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="128" column="61" selection-start-line="128" selection-start-column="61" selection-end-line="128" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#SistemaStock#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="150">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteCpaFac.java">
+    <entry file="file://$PROJECT_DIR$/src/model/ItemMargenPrecio.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="120">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Margen.java">
+    <entry file="file://$PROJECT_DIR$/src/model/ItemMargen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/ArticuloDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1335">
-          <caret line="265" column="13" selection-start-line="265" selection-start-column="13" selection-end-line="265" selection-end-column="13" />
-          <folding>
-            <marker date="1468270004000" expanded="true" signature="783:844" ph="Update items... " />
-            <marker date="1468270004000" expanded="true" signature="1431:1535" ph="Insert Into itemsstock... " />
-            <marker date="1468270004000" expanded="true" signature="2368:2467" ph="Insert Into itemsmargen... " />
-            <marker date="1468270004000" expanded="true" signature="3178:3223" ph="Select * Fro... articulos" />
-            <marker date="1468270004000" expanded="true" signature="3997:4020" ph="Select * Fro... articulos" />
-            <marker date="1468270004000" expanded="true" signature="4858:4931" ph="Select * Fro... itemsstock" />
-            <marker date="1468270004000" expanded="true" signature="4858:4950" ph="Select * Fro... itemsstock" />
-            <marker date="1468270004000" expanded="true" signature="5933:5980" ph="Select * Fro... itemsmargen" />
-            <marker date="1468270004000" expanded="true" signature="5933:5999" ph="Select * Fro... itemsmargen" />
-            <marker date="1468270004000" expanded="true" signature="7632:7655" ph="Select * Fro... articulos" />
-            <marker date="1468270004000" expanded="true" signature="7914:7954" ph="Select COD_A... STA11" />
-            <marker date="1468270004000" expanded="true" signature="8387:8452" ph="Insert Into articulos... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/ControllerFrmArticulos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="240">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/ItemStock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1051">
-          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Articulo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="76" column="36" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
+        <state relative-caret-position="945">
+          <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Stock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+        <state relative-caret-position="990">
+          <caret line="72" column="56" selection-start-line="72" selection-start-column="56" selection-end-line="72" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dao/ArticuloDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+          <folding>
+            <marker date="1468340966000" expanded="true" signature="783:844" ph="Update items... " />
+            <marker date="1468340966000" expanded="true" signature="1431:1535" ph="Insert Into itemsstock... " />
+            <marker date="1468340966000" expanded="true" signature="2368:2467" ph="Insert Into itemsmargen... " />
+            <marker date="1468340966000" expanded="true" signature="3242:3311" ph="Insert Into itemsmargen... " />
+            <marker date="1468340966000" expanded="true" signature="3911:3956" ph="Select * Fro... articulos" />
+            <marker date="1468340966000" expanded="true" signature="4730:4753" ph="Select * Fro... articulos" />
+            <marker date="1468340966000" expanded="true" signature="5591:5664" ph="Select * Fro... itemsstock" />
+            <marker date="1468340966000" expanded="true" signature="5591:5683" ph="Select * Fro... itemsstock" />
+            <marker date="1468340966000" expanded="true" signature="6666:6713" ph="Select * Fro... itemsmargen" />
+            <marker date="1468340966000" expanded="true" signature="6666:6732" ph="Select * Fro... itemsmargen" />
+            <marker date="1468340966000" expanded="true" signature="8365:8388" ph="Select * Fro... articulos" />
+            <marker date="1468340966000" expanded="true" signature="8647:8687" ph="Select COD_A... STA11" />
+            <marker date="1468340966000" expanded="true" signature="9120:9185" ph="Insert Into articulos... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteVtaCre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/ComprobanteVtaFac.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        <state relative-caret-position="315">
+          <caret line="25" column="86" selection-start-line="25" selection-start-column="86" selection-end-line="25" selection-end-column="86" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/ControllerFrmArticulos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2055">
+          <caret line="148" column="13" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/SistemaStock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#init#0;class#SistemaStock#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

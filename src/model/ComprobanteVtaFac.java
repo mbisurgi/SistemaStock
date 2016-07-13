@@ -23,7 +23,7 @@ public class ComprobanteVtaFac extends ComprobanteVta {
             List<ItemStock> itemsDescontados = art.restarStock(item.getCantidad());
 
             for (ItemStock itemDescontado: itemsDescontados) {
-                ArticuloDao.getInstancia().updateItemStock(itemDescontado.getIdItem(), itemDescontado.getCantidadDisponible());
+                ArticuloDao.getInstancia().updateItemStock(itemDescontado.getIdItem(), itemDescontado.getCantidadRestante());
                 ArticuloDao.getInstancia().insertItemMargenUnidad(art, itemDescontado.getFecha(), itemDescontado.getCantidadDisponible(), itemDescontado.getPrecio(), item.getPrecio());
                 ItemMargen margen = new ItemMargenUnidad(itemDescontado.getFecha(), itemDescontado.getCantidadDisponible(), itemDescontado.getPrecio(), item.getPrecio());
                 art.getMargen().addItem(margen);

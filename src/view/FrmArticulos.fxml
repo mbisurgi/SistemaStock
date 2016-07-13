@@ -156,15 +156,22 @@
                      <children>
                         <TitledPane animated="false" layoutX="14.0" layoutY="42.0" prefHeight="410.0" prefWidth="570.0" text="Movimientos Margen">
                            <content>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="147.0" prefWidth="568.0">
                                  <children>
-                                    <TableView fx:id="tblMovimientosStock1" layoutX="14.0" layoutY="14.0" prefHeight="382.0" prefWidth="568.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <TableView fx:id="tblMovimientosMargenUnidad" layoutX="11.0" layoutY="14.0" prefHeight="175.0" prefWidth="546.0">
                                        <columns>
-                                          <TableColumn fx:id="colId1" editable="false" prefWidth="100.0" resizable="false" text="Id" />
-                                          <TableColumn fx:id="colFecha1" editable="false" prefWidth="111.0" resizable="false" text="Fecha" />
-                                          <TableColumn fx:id="colCantidad1" editable="false" prefWidth="112.0" resizable="false" text="Cantidad" />
-                                          <TableColumn fx:id="colPrecio1" editable="false" prefWidth="111.0" resizable="false" text="Precio" />
-                                          <TableColumn fx:id="colDisponible1" editable="false" prefWidth="112.0" resizable="false" text="Disponible" />
+                                          <TableColumn fx:id="colIdMargenUnidad" editable="false" prefWidth="100.0" resizable="false" text="Id" />
+                                          <TableColumn fx:id="colFechaMargenUnidad" editable="false" prefWidth="111.0" resizable="false" text="Fecha" />
+                                          <TableColumn fx:id="colCantidadMargenUnidad" editable="false" prefWidth="112.0" resizable="false" text="Cantidad" />
+                                          <TableColumn fx:id="colCpaMargenUnidad" editable="false" prefWidth="111.0" resizable="false" text="Precio Cpa" />
+                                          <TableColumn fx:id="colVtaMargenUnidad" editable="false" prefWidth="112.0" resizable="false" text="Precio Vta" />
+                                       </columns>
+                                    </TableView>
+                                    <TableView fx:id="tblMovimientosMargenPrecio" layoutX="11.0" layoutY="191.0" prefHeight="175.0" prefWidth="546.0">
+                                       <columns>
+                                          <TableColumn fx:id="colIdMargenPrecio" editable="false" prefWidth="100.0" resizable="false" text="Id" />
+                                          <TableColumn fx:id="colFechaMargenPrecio" editable="false" prefWidth="111.0" resizable="false" text="Fecha" />
+                                          <TableColumn fx:id="colPrecioMargenPrecio" editable="false" prefWidth="111.0" resizable="false" text="Precio" />
                                        </columns>
                                     </TableView>
                                  </children>

@@ -1,5 +1,8 @@
 package model;
 
+import controller.SistemaStock;
+import dao.ArticuloDao;
+
 import java.sql.Date;
 
 public class ComprobanteVtaCre extends ComprobanteVta {
@@ -14,8 +17,10 @@ public class ComprobanteVtaCre extends ComprobanteVta {
     @Override
     public void updateStock() {
         for (ItemComprobante item: items) {
-            ItemMargen itemMargen = new ItemMargenPrecio(this.fecha, (item.getCantidad() * item.getPrecio()) * -1);
+            Articulo art = SistemaStock.getInstancia().buscarArticulo(item.getArticulo().getNroArticulo());
 
+            ArticuloDao.getInstancia().insertItemMargenPrecio(art, this.fecha, (item.getCantidad() * item.getPrecio()) * -1);
+            ItemMargen itemMargen = new ItemMargenPrecio(this.fecha, (item.getCantidad() * item.getPrecio()) * -1);
             item.getArticulo().addItemMargen(itemMargen);
         }
     }
