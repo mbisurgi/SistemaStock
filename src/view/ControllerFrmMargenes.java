@@ -30,6 +30,7 @@ public class ControllerFrmMargenes {
         articulos = FXCollections.observableArrayList();
 
         configurarTableViewMovimientosStock();
+        cargarArticulos();
     }
 
     private void configurarTableViewMovimientosStock() {

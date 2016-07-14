@@ -73,6 +73,7 @@
             <Menu mnemonicParsing="false" text="Articulos">
               <items>
                 <MenuItem fx:id="menuConsultaArticulo" mnemonicParsing="false" onAction="#menuConsultaArticuloOnClick" text="Consulta Articulo" />
+                  <MenuItem fx:id="menuConsultaMargenes" mnemonicParsing="false" onAction="#menuConsultaMargenesOnClick" text="Consulta Margenes" />
               </items>
             </Menu>
         </menus>
