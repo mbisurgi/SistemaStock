@@ -8,6 +8,7 @@ import model.strategy.ValorizacionUEPS;
 
 import java.sql.Date;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class SistemaStock {
@@ -189,6 +190,18 @@ public class SistemaStock {
         for (Articulo art: articulos) {
             if (art.margen() != 0) {
                 listado.add(art.getArticuloView());
+            }
+        }
+
+        return listado;
+    }
+
+    public List<ArticuloView> getArticulosFecha(Date desde, Date hasta) {
+        List<ArticuloView> listado = new ArrayList<>();
+
+        for (Articulo art: articulos) {
+            if (art.margen() != 0) {
+                listado.add(new ArticuloView(art.getNroArticulo(), art.getNombreArticulo(), art.margenFecha(desde, hasta)));
             }
         }
 

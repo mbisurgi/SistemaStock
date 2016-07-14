@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
-
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ControllerFrmMargenes">
    <children>
@@ -13,13 +13,21 @@
             <content>
               <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="500.0" prefWidth="600.0">
                      <children>
-                        <TableView fx:id="tblArticulosMargen" layoutX="14.0" layoutY="14.0" prefHeight="350.0" prefWidth="570.0">
+                        <TableView fx:id="tblArticulosMargen" layoutX="14.0" layoutY="14.0" prefHeight="380.0" prefWidth="570.0">
                           <columns>
                             <TableColumn fx:id="colNroArticulo" editable="false" prefWidth="100.0" resizable="false" text="Nro Art" />
                             <TableColumn fx:id="colNombreArticulo" editable="false" prefWidth="300.0" resizable="false" text="Articulo" />
                               <TableColumn fx:id="colMargen" editable="false" prefWidth="150.0" text="Margen" />
                           </columns>
                         </TableView>
+                        <Label fx:id="lblMargen" alignment="CENTER_RIGHT" layoutX="384.0" layoutY="442.0" prefHeight="22.0" prefWidth="200.0" text="Label">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="dtpDesde" layoutX="14.0" layoutY="403.0" />
+                        <DatePicker fx:id="dtpHasta" layoutX="184.0" layoutY="403.0" />
+                        <Button fx:id="btnVer" layoutX="360.0" layoutY="403.0" mnemonicParsing="false" onAction="#btnVerOnMouseClicked" text="Ver" />
                      </children>
                   </AnchorPane>
             </content>

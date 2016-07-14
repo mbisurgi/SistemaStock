@@ -77,7 +77,11 @@ public class Articulo {
         return this.margen.margen();
     }
 
+    public double margenFecha(Date desde, Date hasta) {
+        return this.margen.margenFecha(desde, hasta);
+    }
+
     public ArticuloView getArticuloView() {
-        return new ArticuloView(this.nroArticulo, this.nombreArticulo, this.margen());
+        return new ArticuloView(this.nroArticulo, this.nombreArticulo, Math.round(this.margen() * 100) / 100);
     }
 }

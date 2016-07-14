@@ -1,6 +1,8 @@
 package model;
 
+import java.sql.Date;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class Margen {
@@ -27,6 +29,18 @@ public class Margen {
 
         for (ItemMargen item: items) {
             margen = margen + item.margen();
+        }
+
+        return margen;
+    }
+
+    public double margenFecha(Date desde, Date hasta) {
+        double margen = 0;
+
+        for (ItemMargen item: items) {
+            if (desde.compareTo(item.getFecha()) <=0 && hasta.compareTo(item.getFecha()) >=0) {
+                margen = margen + item.margen();
+            }
         }
 
         return margen;
