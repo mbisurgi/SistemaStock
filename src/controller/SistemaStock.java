@@ -188,9 +188,7 @@ public class SistemaStock {
         List<ArticuloView> listado = new ArrayList<>();
 
         for (Articulo art: articulos) {
-            if (art.margen() != 0) {
-                listado.add(art.getArticuloView());
-            }
+            listado.add(art.getArticuloView());
         }
 
         return listado;
@@ -201,7 +199,7 @@ public class SistemaStock {
 
         for (Articulo art: articulos) {
             if (art.margen() != 0) {
-                listado.add(new ArticuloView(art.getNroArticulo(), art.getNombreArticulo(), art.margenFecha(desde, hasta)));
+                listado.add(new ArticuloView(art.getNroArticulo(), art.getNombreArticulo(), art.margenFecha(desde, hasta), art.getStock().getCantidad(), art.getStock().valorizar()));
             }
         }
 
