@@ -82,6 +82,6 @@ public class Articulo {
     }
 
     public ArticuloView getArticuloView() {
-        return new ArticuloView(this.nroArticulo, this.nombreArticulo, Math.round(this.margen() * 100) / 100, this.stock.getCantidad(), this.stock.valorizar());
+        return new ArticuloView(this.nroArticulo, this.nombreArticulo, Math.round(this.margen() * 100) / 100, this.stock.getCantidad(), Math.round(this.stock.valorizar() * 100) / 100);
     }
 }

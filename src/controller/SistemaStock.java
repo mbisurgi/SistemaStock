@@ -199,7 +199,7 @@ public class SistemaStock {
 
         for (Articulo art: articulos) {
             if (art.margen() != 0) {
-                listado.add(new ArticuloView(art.getNroArticulo(), art.getNombreArticulo(), art.margenFecha(desde, hasta), art.getStock().getCantidad(), art.getStock().valorizar()));
+                listado.add(new ArticuloView(art.getNroArticulo(), art.getNombreArticulo(), Math.round(art.margenFecha(desde, hasta) * 100) / 100, art.getStock().getCantidad(), art.getStock().valorizar()));
             }
         }
 

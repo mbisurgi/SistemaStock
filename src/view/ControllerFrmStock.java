@@ -12,7 +12,7 @@ import model.ArticuloView;
 
 public class ControllerFrmStock {
     @FXML
-    TableView<ArticuloView> tblArticulosMargen;
+    TableView<ArticuloView> tblArticulosStock;
     @FXML
     TableColumn<ArticuloView, String> colNroArticulo;
     @FXML
@@ -44,7 +44,7 @@ public class ControllerFrmStock {
         colUnidades.setCellValueFactory(new PropertyValueFactory<>("stockUni"));
         colValorizacion.setCellValueFactory(new PropertyValueFactory<>("stockVal"));
 
-        tblArticulosMargen.setItems(articulos);
+        tblArticulosStock.setItems(articulos);
     }
 
     private void cargarArticulos() {
