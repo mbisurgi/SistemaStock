@@ -97,6 +97,10 @@ public class ControllerFrmPrincipal {
         loadFrmMargenes(event);
     }
 
+    public void menuConsultaStockOnClick(ActionEvent event) {
+        loadFrmStock(event);
+    }
+
     private void loadFrmArticulos(ActionEvent event) {
         try {
             Parent parent = FXMLLoader.load(getClass().getResource("FrmArticulos.fxml"));
@@ -115,6 +119,19 @@ public class ControllerFrmPrincipal {
             Parent parent = FXMLLoader.load(getClass().getResource("FrmMargenes.fxml"));
             Stage stage = new Stage();
             stage.setTitle("Margenes");
+            stage.setScene(new Scene(parent, 600, 500));
+            stage.setResizable(false);
+            stage.show();
+        } catch (IOException ex) {
+            mostrarError(ex);
+        }
+    }
+
+    private void loadFrmStock(ActionEvent event) {
+        try {
+            Parent parent = FXMLLoader.load(getClass().getResource("FrmStock.fxml"));
+            Stage stage = new Stage();
+            stage.setTitle("Stock");
             stage.setScene(new Scene(parent, 600, 500));
             stage.setResizable(false);
             stage.show();

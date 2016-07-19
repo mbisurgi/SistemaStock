@@ -7,13 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/view/ControllerFrmStock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SistemaStock/dao/PoolConnection.class" afterPath="$PROJECT_DIR$/out/production/SistemaStock/dao/PoolConnection.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/SistemaStock.java" afterPath="$PROJECT_DIR$/src/controller/SistemaStock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/PoolConnection.java" afterPath="$PROJECT_DIR$/src/dao/PoolConnection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/Articulo.java" afterPath="$PROJECT_DIR$/src/model/Articulo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/ArticuloView.java" afterPath="$PROJECT_DIR$/src/model/ArticuloView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/ControllerFrmPrincipal.java" afterPath="$PROJECT_DIR$/src/view/ControllerFrmPrincipal.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/FrmPrincipal.fxml" afterPath="$PROJECT_DIR$/src/view/FrmPrincipal.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/FrmStock.fxml" afterPath="$PROJECT_DIR$/src/view/FrmStock.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,7 +114,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControllerFrmStock.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ControllerFrmStock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/ControllerFrmStock.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="930">
@@ -125,6 +122,16 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControllerFrmPrincipal.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/view/ControllerFrmPrincipal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="91" column="64" selection-start-line="91" selection-start-column="64" selection-end-line="91" selection-end-column="64" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -210,13 +217,13 @@
         <option value="$PROJECT_DIR$/src/dao/ComprobanteDao.java" />
         <option value="$PROJECT_DIR$/src/model/ComprobanteVtaCre.java" />
         <option value="$PROJECT_DIR$/src/model/ComprobanteCpaCre.java" />
-        <option value="$PROJECT_DIR$/src/view/ControllerFrmPrincipal.java" />
         <option value="$PROJECT_DIR$/src/model/Margen.java" />
         <option value="$PROJECT_DIR$/src/view/ControllerFrmMargenes.java" />
         <option value="$PROJECT_DIR$/src/model/ArticuloView.java" />
         <option value="$PROJECT_DIR$/src/model/Articulo.java" />
         <option value="$PROJECT_DIR$/src/controller/SistemaStock.java" />
         <option value="$PROJECT_DIR$/src/view/ControllerFrmStock.java" />
+        <option value="$PROJECT_DIR$/src/view/ControllerFrmPrincipal.java" />
       </list>
     </option>
   </component>
@@ -994,7 +1001,7 @@
       <workItem from="1468417534291" duration="5359000" />
       <workItem from="1468423855539" duration="4379000" />
       <workItem from="1468429141047" duration="13675000" />
-      <workItem from="1468937204309" duration="1192000" />
+      <workItem from="1468937204309" duration="1565000" />
     </task>
     <task id="LOCAL-00001" summary="Controlador">
       <created>1465831772322</created>
@@ -1199,11 +1206,18 @@
       <option name="project" value="LOCAL" />
       <updated>1468524949282</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Ingreso y actualizacion de stock">
+      <created>1468939407611</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1468939407611</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180949000" />
+    <option name="totallyTimeSpent" value="181322000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1546,14 +1560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/ControllerFrmPrincipal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="116" column="36" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Margen.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -1605,6 +1611,14 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/ControllerFrmPrincipal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="91" column="64" selection-start-line="91" selection-start-column="64" selection-end-line="91" selection-end-column="64" />
+          <folding />
         </state>
       </provider>
     </entry>
