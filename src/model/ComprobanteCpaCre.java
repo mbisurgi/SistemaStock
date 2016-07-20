@@ -18,6 +18,8 @@ public class ComprobanteCpaCre extends ComprobanteCpa {
         for (ItemComprobante item: items) {
             Articulo art = SistemaStock.getInstancia().buscarArticulo(item.getArticulo().getNroArticulo());
 
+            art.restarStock(item.getCantidad());
+
             ItemMargen itemMargen = new ItemMargenPrecio(this.fecha, (item.getCantidad() * item.getPrecio()));
             art.addItemMargen(itemMargen);
         }

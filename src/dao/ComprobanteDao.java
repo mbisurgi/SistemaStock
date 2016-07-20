@@ -465,7 +465,7 @@ public class ComprobanteDao extends AbstractDao{
                 }
             }
 
-            sql = "Select T_COMP, N_COMP, FECHA_EMIS, COD_CLIENT From GVA12 Where FECHA_EMIS = ?";
+            sql = "Select T_COMP, N_COMP, FECHA_EMIS, COD_CLIENT From GVA12 Where FECHA_EMIS >= ?";
 
             psTango = conTango.prepareStatement(sql);
             psTango.setDate(1, fecha);
