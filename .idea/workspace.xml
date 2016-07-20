@@ -7,12 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SistemaStock/SistemaStock.jar" afterPath="$PROJECT_DIR$/out/artifacts/SistemaStock/SistemaStock.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SistemaStock/SistemaStock.html" afterPath="$PROJECT_DIR$/out/artifacts/SistemaStock/SistemaStock.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SistemaStock/SistemaStock.jnlp" afterPath="$PROJECT_DIR$/out/artifacts/SistemaStock/SistemaStock.jnlp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/ComprobanteDao.java" afterPath="$PROJECT_DIR$/src/dao/ComprobanteDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/ComprobanteCpaCre.java" afterPath="$PROJECT_DIR$/src/model/ComprobanteCpaCre.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dao/PoolConnection.java" afterPath="$PROJECT_DIR$/src/dao/PoolConnection.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,12 +74,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="3060">
               <caret line="193" column="23" selection-start-line="193" selection-start-column="23" selection-end-line="193" selection-end-column="23" />
-              <folding>
-                <element signature="e#3536#3537#0" expanded="false" />
-                <element signature="e#3601#3602#0" expanded="false" />
-                <element signature="e#3656#3657#0" expanded="false" />
-                <element signature="e#3732#3733#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,18 +94,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
               <caret line="25" column="86" selection-start-line="25" selection-start-column="86" selection-end-line="25" selection-end-column="86" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerFrmMargenes.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/ControllerFrmMargenes.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="66" column="5" selection-start-line="58" selection-start-column="4" selection-end-line="66" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -125,35 +104,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="850">
               <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#607#608#0" expanded="false" />
-                <element signature="e#641#642#0" expanded="false" />
-                <element signature="e#695#696#0" expanded="false" />
-                <element signature="e#741#742#0" expanded="false" />
-                <element signature="e#782#783#0" expanded="false" />
-                <element signature="e#819#820#0" expanded="false" />
-                <element signature="e#879#880#0" expanded="false" />
-                <element signature="e#931#932#0" expanded="false" />
-                <element signature="e#962#963#0" expanded="false" />
-                <element signature="e#990#991#0" expanded="false" />
-                <element signature="e#1031#1032#0" expanded="false" />
-                <element signature="e#1065#1066#0" expanded="false" />
-                <element signature="e#1098#1099#0" expanded="false" />
-                <element signature="e#1127#1128#0" expanded="false" />
-                <element signature="e#1171#1172#0" expanded="false" />
-                <element signature="e#1207#1208#0" expanded="false" />
-                <element signature="e#1280#1281#0" expanded="false" />
-                <element signature="e#1339#1340#0" expanded="false" />
-                <element signature="e#1395#1396#0" expanded="false" />
-                <element signature="e#1450#1451#0" expanded="false" />
-                <element signature="e#1644#1645#0" expanded="false" />
-                <element signature="e#1685#1686#0" expanded="false" />
-                <element signature="e#1715#1716#0" expanded="false" />
-                <element signature="e#1758#1759#0" expanded="false" />
-                <element signature="e#1815#1816#0" expanded="false" />
-                <element signature="e#1875#1876#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -174,36 +125,30 @@
             <state relative-caret-position="1258">
               <caret line="91" column="64" selection-start-line="91" selection-start-column="64" selection-end-line="91" selection-end-column="64" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#845#846#0" expanded="false" />
-                <element signature="e#888#889#0" expanded="false" />
-                <element signature="e#2527#2528#0" expanded="false" />
-                <element signature="e#2565#2566#0" expanded="false" />
-                <element signature="e#2628#2629#0" expanded="false" />
-                <element signature="e#2663#2664#0" expanded="false" />
+                <element signature="e#2461#2462#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComprobanteDao.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ComprobanteDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/ComprobanteDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1812">
-              <caret line="333" column="102" selection-start-line="333" selection-start-column="102" selection-end-line="333" selection-end-column="102" />
+            <state relative-caret-position="-119">
+              <caret line="457" column="68" selection-start-line="457" selection-start-column="68" selection-end-line="457" selection-end-column="68" />
               <folding>
                 <element signature="method#getComprobantes#0;class#ComprobanteDao#0" expanded="false" />
-                <marker date="1469037589962" expanded="true" signature="652:748" ph="Insert Into comprobantes... " />
-                <marker date="1469037589962" expanded="true" signature="2796:2864" ph="Update compr... " />
-                <marker date="1469037589962" expanded="true" signature="3406:3520" ph="Insert Into itemscomprobante... " />
-                <marker date="1469037589962" expanded="true" signature="5158:5184" ph="Select * Fro... comprobantes" />
-                <marker date="1469037589962" expanded="true" signature="8088:8159" ph="Select * Fro... comprobantes" />
-                <marker date="1469037589962" expanded="true" signature="11240:11321" ph="Select * Fro... itemscomprobante" />
-                <marker date="1469037589962" expanded="true" signature="12528:12610" ph="Select COD_A... GVA53" />
-                <marker date="1469037589962" expanded="true" signature="13260:13331" ph="Select COD_A... CPA46" />
-                <marker date="1469037589962" expanded="true" signature="14524:14550" ph="Select * Fro... comprobantes" />
-                <marker date="1469037589962" expanded="true" signature="14825:14934" ph="Select NCOMP... CPA04" />
-                <marker date="1469037589962" expanded="true" signature="16568:16646" ph="Select T_COM... GVA12" />
+                <marker date="1469042325615" expanded="true" signature="652:748" ph="Insert Into comprobantes... " />
+                <marker date="1469042325615" expanded="true" signature="2796:2864" ph="Update compr... " />
+                <marker date="1469042325615" expanded="true" signature="3406:3520" ph="Insert Into itemscomprobante... " />
+                <marker date="1469042325615" expanded="true" signature="5158:5184" ph="Select * Fro... comprobantes" />
+                <marker date="1469042325615" expanded="true" signature="8088:8159" ph="Select * Fro... comprobantes" />
+                <marker date="1469042325615" expanded="true" signature="11240:11321" ph="Select * Fro... itemscomprobante" />
+                <marker date="1469042325615" expanded="true" signature="12528:12610" ph="Select COD_A... GVA53" />
+                <marker date="1469042325615" expanded="true" signature="13260:13331" ph="Select COD_A... CPA46" />
+                <marker date="1469042325615" expanded="true" signature="14524:14550" ph="Select * Fro... comprobantes" />
+                <marker date="1469042325615" expanded="true" signature="14825:14934" ph="Select NCOMP... CPA04" />
+                <marker date="1469042325615" expanded="true" signature="16568:16646" ph="Select T_COM... GVA12" />
               </folding>
             </state>
           </provider>
@@ -213,16 +158,26 @@
         <entry file="file://$PROJECT_DIR$/src/dao/PoolConnection.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="30" column="80" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
+              <caret line="30" column="82" selection-start-line="30" selection-start-column="82" selection-end-line="30" selection-end-column="82" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComprobanteCpaCre.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PoolConnectionTango.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dao/PoolConnectionTango.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ComprobanteCpaCre.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/model/ComprobanteCpaCre.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="335">
               <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -306,9 +261,9 @@
         <option value="$PROJECT_DIR$/src/view/ControllerFrmStock.java" />
         <option value="$PROJECT_DIR$/src/model/Articulo.java" />
         <option value="$PROJECT_DIR$/src/controller/SistemaStock.java" />
-        <option value="$PROJECT_DIR$/src/dao/PoolConnection.java" />
         <option value="$PROJECT_DIR$/src/model/ComprobanteCpaCre.java" />
         <option value="$PROJECT_DIR$/src/dao/ComprobanteDao.java" />
+        <option value="$PROJECT_DIR$/src/dao/PoolConnection.java" />
       </list>
     </option>
   </component>
@@ -372,6 +327,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -554,7 +510,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -1102,6 +1057,7 @@
       <workItem from="1468937204309" duration="1565000" />
       <workItem from="1468939870195" duration="3428000" />
       <workItem from="1469029491692" duration="2812000" />
+      <workItem from="1469042362391" duration="1498000" />
     </task>
     <task id="LOCAL-00001" summary="Controlador">
       <created>1465831772322</created>
@@ -1324,7 +1280,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187562000" />
+    <option name="totallyTimeSpent" value="189060000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1347,7 +1303,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283767" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847533" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40868264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40868264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1496,13 +1452,13 @@
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java" />
     <entry file="file://$PROJECT_DIR$/src/view/FrmPrincipal.xsl" />
     <entry file="file://$PROJECT_DIR$/src/view/FrmArticulos.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/Main.java">
@@ -1523,13 +1479,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dao/PoolConnectionTango.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-195">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1588,25 +1537,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/FrmPrincipal.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/FrmMargenes.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/FrmMargenes.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/ControllerFrmArticulos.java">
@@ -1627,16 +1576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="29" column="30" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-          <folding>
-            <element signature="e#535#536#0" expanded="false" />
-            <element signature="e#569#570#0" expanded="false" />
-            <element signature="e#610#611#0" expanded="false" />
-            <element signature="e#647#648#0" expanded="false" />
-            <element signature="e#680#681#0" expanded="false" />
-            <element signature="e#709#710#0" expanded="false" />
-            <element signature="e#807#808#0" expanded="false" />
-            <element signature="e#838#839#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1653,13 +1592,7 @@
         <state relative-caret-position="1258">
           <caret line="91" column="64" selection-start-line="91" selection-start-column="64" selection-end-line="91" selection-end-column="64" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#845#846#0" expanded="false" />
-            <element signature="e#888#889#0" expanded="false" />
-            <element signature="e#2527#2528#0" expanded="false" />
-            <element signature="e#2565#2566#0" expanded="false" />
-            <element signature="e#2628#2629#0" expanded="false" />
-            <element signature="e#2663#2664#0" expanded="false" />
+            <element signature="e#2461#2462#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1676,35 +1609,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
           <caret line="77" column="5" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#607#608#0" expanded="false" />
-            <element signature="e#641#642#0" expanded="false" />
-            <element signature="e#695#696#0" expanded="false" />
-            <element signature="e#741#742#0" expanded="false" />
-            <element signature="e#782#783#0" expanded="false" />
-            <element signature="e#819#820#0" expanded="false" />
-            <element signature="e#879#880#0" expanded="false" />
-            <element signature="e#931#932#0" expanded="false" />
-            <element signature="e#962#963#0" expanded="false" />
-            <element signature="e#990#991#0" expanded="false" />
-            <element signature="e#1031#1032#0" expanded="false" />
-            <element signature="e#1065#1066#0" expanded="false" />
-            <element signature="e#1098#1099#0" expanded="false" />
-            <element signature="e#1127#1128#0" expanded="false" />
-            <element signature="e#1171#1172#0" expanded="false" />
-            <element signature="e#1207#1208#0" expanded="false" />
-            <element signature="e#1280#1281#0" expanded="false" />
-            <element signature="e#1339#1340#0" expanded="false" />
-            <element signature="e#1395#1396#0" expanded="false" />
-            <element signature="e#1450#1451#0" expanded="false" />
-            <element signature="e#1644#1645#0" expanded="false" />
-            <element signature="e#1685#1686#0" expanded="false" />
-            <element signature="e#1715#1716#0" expanded="false" />
-            <element signature="e#1758#1759#0" expanded="false" />
-            <element signature="e#1815#1816#0" expanded="false" />
-            <element signature="e#1875#1876#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1720,9 +1625,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="25" column="86" selection-start-line="25" selection-start-column="86" selection-end-line="25" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1730,50 +1633,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3060">
           <caret line="193" column="23" selection-start-line="193" selection-start-column="23" selection-end-line="193" selection-end-column="23" />
-          <folding>
-            <element signature="e#3536#3537#0" expanded="false" />
-            <element signature="e#3601#3602#0" expanded="false" />
-            <element signature="e#3656#3657#0" expanded="false" />
-            <element signature="e#3732#3733#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/PoolConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="30" column="80" selection-start-line="30" selection-start-column="80" selection-end-line="30" selection-end-column="80" />
+          <caret line="30" column="82" selection-start-line="30" selection-start-column="82" selection-end-line="30" selection-end-column="82" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteCpaCre.java">
+    <entry file="file://$PROJECT_DIR$/src/dao/PoolConnectionTango.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/ComprobanteDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1812">
-          <caret line="333" column="102" selection-start-line="333" selection-start-column="102" selection-end-line="333" selection-end-column="102" />
+        <state relative-caret-position="-119">
+          <caret line="457" column="68" selection-start-line="457" selection-start-column="68" selection-end-line="457" selection-end-column="68" />
           <folding>
             <element signature="method#getComprobantes#0;class#ComprobanteDao#0" expanded="false" />
-            <marker date="1469037589962" expanded="true" signature="652:748" ph="Insert Into comprobantes... " />
-            <marker date="1469037589962" expanded="true" signature="2796:2864" ph="Update compr... " />
-            <marker date="1469037589962" expanded="true" signature="3406:3520" ph="Insert Into itemscomprobante... " />
-            <marker date="1469037589962" expanded="true" signature="5158:5184" ph="Select * Fro... comprobantes" />
-            <marker date="1469037589962" expanded="true" signature="8088:8159" ph="Select * Fro... comprobantes" />
-            <marker date="1469037589962" expanded="true" signature="11240:11321" ph="Select * Fro... itemscomprobante" />
-            <marker date="1469037589962" expanded="true" signature="12528:12610" ph="Select COD_A... GVA53" />
-            <marker date="1469037589962" expanded="true" signature="13260:13331" ph="Select COD_A... CPA46" />
-            <marker date="1469037589962" expanded="true" signature="14524:14550" ph="Select * Fro... comprobantes" />
-            <marker date="1469037589962" expanded="true" signature="14825:14934" ph="Select NCOMP... CPA04" />
-            <marker date="1469037589962" expanded="true" signature="16568:16646" ph="Select T_COM... GVA12" />
+            <marker date="1469042325615" expanded="true" signature="652:748" ph="Insert Into comprobantes... " />
+            <marker date="1469042325615" expanded="true" signature="2796:2864" ph="Update compr... " />
+            <marker date="1469042325615" expanded="true" signature="3406:3520" ph="Insert Into itemscomprobante... " />
+            <marker date="1469042325615" expanded="true" signature="5158:5184" ph="Select * Fro... comprobantes" />
+            <marker date="1469042325615" expanded="true" signature="8088:8159" ph="Select * Fro... comprobantes" />
+            <marker date="1469042325615" expanded="true" signature="11240:11321" ph="Select * Fro... itemscomprobante" />
+            <marker date="1469042325615" expanded="true" signature="12528:12610" ph="Select COD_A... GVA53" />
+            <marker date="1469042325615" expanded="true" signature="13260:13331" ph="Select COD_A... CPA46" />
+            <marker date="1469042325615" expanded="true" signature="14524:14550" ph="Select * Fro... comprobantes" />
+            <marker date="1469042325615" expanded="true" signature="14825:14934" ph="Select NCOMP... CPA04" />
+            <marker date="1469042325615" expanded="true" signature="16568:16646" ph="Select T_COM... GVA12" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/ComprobanteCpaCre.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
