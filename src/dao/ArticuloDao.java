@@ -227,7 +227,7 @@ public class ArticuloDao extends AbstractDao {
         Connection con = PoolConnection.getInstancia().getConnection();
 
         try {
-            String sql = "Select * From itemsstock Where nroArticulo = ? And cantidadDisponible > 0 Order By fecha Asc";
+            String sql = "Select * From itemsstock Where nroArticulo = ? And cantidadDisponible >= 0 Order By fecha Asc";
 
             PreparedStatement ps = con.prepareStatement(sql);
             ps.setString(1, nroArticulo);
