@@ -194,6 +194,18 @@ public class SistemaStock {
         return listado;
     }
 
+    public List<ArticuloView> getArticulosValorizados(Valorizacion valorizacion) {
+        List<ArticuloView> listado = new ArrayList<>();
+
+        for (Articulo art: articulos) {
+            art.getStock().setValorizacion(valorizacion);
+
+            listado.add(art.getArticuloView());
+        }
+
+        return listado;
+    }
+
     public List<ArticuloView> getArticulosFecha(Date desde, Date hasta) {
         List<ArticuloView> listado = new ArrayList<>();
 

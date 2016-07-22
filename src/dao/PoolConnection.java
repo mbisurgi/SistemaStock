@@ -28,7 +28,7 @@ public class PoolConnection {
     private Connection connect() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://181.46.86.2:3306/sistemastock", "root", "maximati");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/sistemastock", "root", "maximati");
 
             return con;
         } catch (SQLException exSql) {

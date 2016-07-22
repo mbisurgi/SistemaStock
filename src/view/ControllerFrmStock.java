@@ -4,11 +4,15 @@ import controller.SistemaStock;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import model.ArticuloView;
+import model.strategy.*;
+
+import java.sql.Date;
 
 public class ControllerFrmStock {
     @FXML
@@ -21,6 +25,14 @@ public class ControllerFrmStock {
     TableColumn<ArticuloView, Integer> colUnidades;
     @FXML
     TableColumn<ArticuloView, Double> colValorizacion;
+    @FXML
+    Button btnPeps;
+    @FXML
+    Button btnUeps;
+    @FXML
+    Button btnPpp;
+    @FXML
+    Button btnUcpa;
     @FXML
     Label lblStock;
 
@@ -53,6 +65,12 @@ public class ControllerFrmStock {
         articulos.addAll(sistema.getArticulos());
     }
 
+    private void cargarArticulosValorizado(Valorizacion valorizacion) {
+        articulos.clear();
+
+        articulos.addAll(sistema.getArticulosValorizados(valorizacion));
+    }
+
     private double calcularValorTotal() {
         double valorTotal = 0;
 
@@ -61,5 +79,29 @@ public class ControllerFrmStock {
         }
 
         return valorTotal;
+    }
+
+    public void btnPepsOnMouseClicked() {
+        cargarArticulosValorizado(new ValorizacionPEPS());
+
+        lblStock.setText(String.valueOf(calcularValorTotal()));
+    }
+
+    public void btnUepsOnMouseClicked() {
+        cargarArticulosValorizado(new ValorizacionUEPS());
+
+        lblStock.setText(String.valueOf(calcularValorTotal()));
+    }
+
+    public void btnPppOnMouseClicked() {
+        cargarArticulosValorizado(new ValorizacionPPP());
+
+        lblStock.setText(String.valueOf(calcularValorTotal()));
+    }
+
+    public void btnUcpaOnMouseClicked() {
+        cargarArticulosValorizado(new ValorizacionUCPA());
+
+        lblStock.setText(String.valueOf(calcularValorTotal()));
     }
 }

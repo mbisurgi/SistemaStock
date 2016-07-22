@@ -26,6 +26,10 @@
                               <Font name="System Bold" size="14.0" />
                            </font>
                         </Label>
+                        <Button fx:id="btnPeps" layoutX="14.0" layoutY="404.0" mnemonicParsing="false" onAction="#btnPepsOnMouseClicked" prefHeight="22.0" prefWidth="55.0" text="PEPS" />
+                        <Button fx:id="btnUeps" layoutX="79.0" layoutY="404.0" mnemonicParsing="false" onAction="#btnUepsOnMouseClicked" prefHeight="22.0" prefWidth="55.0" text="UEPS" />
+                        <Button fx:id="btnPpp" layoutX="144.0" layoutY="404.0" mnemonicParsing="false" onAction="#btnPppOnMouseClicked" prefHeight="22.0" prefWidth="55.0" text="PPP" />
+                        <Button fx:id="btnUcpa" layoutX="209.0" layoutY="404.0" mnemonicParsing="false" onAction="#btnUcpaOnMouseClicked" prefHeight="22.0" prefWidth="55.0" text="UCPA" />
                      </children>
                   </AnchorPane>
             </content>
